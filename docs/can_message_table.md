@@ -1,0 +1,1 @@
+#TODO table of CAN message structures
