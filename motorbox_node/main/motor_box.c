@@ -292,7 +292,7 @@ void ts_motorControlLoop(void *pvParameters) {
 
       case STARTUP_STATE: //startup, error state
         // only proceed to operation s. when throttle is in deadzone for SAFE_STARTUP_WAIT_MS
-        // this part is kind of a clusterfuck sorry if you have to maintain this : ^(
+        // this part is kind of a clusterduck sorry if you have to maintain this : ^(
         if (target_throttle == 0 && is_system_cleared) {
 
           if (!waiting_for_zero) {
