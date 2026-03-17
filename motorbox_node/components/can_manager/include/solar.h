@@ -37,7 +37,7 @@
 
 
 // used instead of gpio_set_direction, this on actually works
-void gpio_set_dir(int gpio, int mode) {
+static inline void gpio_set_dir(int gpio, int mode) {
     gpio_config_t io_conf = {
         .pin_bit_mask = (1ULL << gpio),
         .mode = GPIO_MODE_OUTPUT,
