@@ -1,9 +1,10 @@
 #pragma once
 #ifndef MAIN_SOLAR_H_
 #define MAIN_SOLAR_H_
+
 #include "driver/gpio.h"
 
-// start of pin deffinitions
+// Start of pin definitions.
 #define PIN_GPIO_0 GPIO_NUM_1
 #define PIN_GPIO_1 GPIO_NUM_0
 #define PIN_GPIO_2 GPIO_NUM_7
@@ -25,35 +26,33 @@
 #define PIN_CLK GPIO_NUM_8
 #define PIN_LATCH GPIO_NUM_10
 #define PIN_DATA GPIO_NUM_11
-// end of pin deffinitions
+// End of pin definitions.
 
-#define MotorTemps_ID	0x200
-#define MotorData_ID	0x201
-#define BMSData_ID	    0x300
-#define BMSExtra_ID	    0x301
-#define GPS_ID	        0x400
-#define Position_ID	    0x401
-#define Control_ID	    0x100
+#define MotorTemps_ID 0x200
+#define MotorData_ID 0x201
+#define BMSData_ID 0x300
+#define BMSExtra_ID 0x301
+#define GPS_ID 0x400
+#define Position_ID 0x401
+#define Control_ID 0x100
 
-
-// used instead of gpio_set_direction, this on actually works
+// Used instead of gpio_set_direction for compatibility with this target.
 static inline void gpio_set_dir(int gpio, int mode) {
-    gpio_config_t io_conf = {
-        .pin_bit_mask = (1ULL << gpio),
-        .mode = GPIO_MODE_OUTPUT,
-        .pull_up_en = GPIO_PULLUP_DISABLE,
-        .pull_down_en = GPIO_PULLDOWN_DISABLE,
-        .intr_type = GPIO_INTR_DISABLE};
+  gpio_config_t io_conf = {
+      .pin_bit_mask = (1ULL << gpio),
+      .mode = GPIO_MODE_OUTPUT,
+      .pull_up_en = GPIO_PULLUP_DISABLE,
+      .pull_down_en = GPIO_PULLDOWN_DISABLE,
+      .intr_type = GPIO_INTR_DISABLE};
 
-    if (mode == 2) {
-        io_conf.mode = GPIO_MODE_OUTPUT;
-    }
-    if (mode == 1) {
-        io_conf.mode = GPIO_MODE_INPUT;
-    }
+  if (mode == 2) {
+    io_conf.mode = GPIO_MODE_OUTPUT;
+  }
+  if (mode == 1) {
+    io_conf.mode = GPIO_MODE_INPUT;
+  }
 
-    gpio_config(&io_conf);
+  gpio_config(&io_conf);
 }
-
 
 #endif /* MAIN_SOLAR_H_ */
