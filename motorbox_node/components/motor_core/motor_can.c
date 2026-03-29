@@ -16,6 +16,7 @@ static const char* TAG = "MOTOR_CAN";
 static volatile uint32_t last_valid_msg_time = 0;
 
 // Frames initialized with IDs from solar.h
+// @TODO Remove after solar.h overhaul
 static twai_message_t controll_frame = { .identifier = Control_ID, .data_length_code = 8, .data = {0} };
 static twai_message_t motor_temps_frame = { .identifier = MotorTemps_ID, .data_length_code = 8, .data = {0} };
 static twai_message_t motor_data_frame = { .identifier = MotorData_ID, .data_length_code = 8, .data = {0} };
