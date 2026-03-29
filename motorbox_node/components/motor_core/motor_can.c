@@ -22,10 +22,13 @@ static twai_message_t motor_data_frame = { .identifier = MotorData_ID, .data_len
 
 // TWAI (CAN) Driver Configurations using pins from solar.h
 static twai_general_config_t g_config = TWAI_GENERAL_CONFIG_DEFAULT(PIN_CAN_TX, PIN_CAN_RX, TWAI_MODE_NORMAL);
-static twai_timing_config_t t_config = TWAI_TIMING_CONFIG_500KBITS(); 
+static twai_timing_config_t t_config = TWAI_TIMING_CONFIG_500KBITS();
 static twai_filter_config_t f_config = TWAI_FILTER_CONFIG_ACCEPT_ALL();
 
 void motor_can_init(void) {
+    // Update watchdog, add extra time for system start
+    last_valid_msg_time = (xTaskGetTickCount() * portTICK_PERIOD_MS) + WD_TIMEOUT_MS
+
     // Register frames before init, as requested by can_manager.h
     ESP_ERROR_CHECK(can_manager_register_frame(&controll_frame, true, true));
     ESP_ERROR_CHECK(can_manager_register_frame(&motor_data_frame, true, true));
