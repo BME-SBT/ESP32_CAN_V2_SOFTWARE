@@ -1,0 +1,9 @@
+#include "test.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+
+
+void app_main(void)
+{
+    test_init();
+}
