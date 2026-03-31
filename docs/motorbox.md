@@ -31,15 +31,15 @@ The node implements a strict state machine to prevent unintentional motor activa
 ## 6. Error Cases and Failsafes
 The system continuously evaluates input validity and hardware status. If any of the following faults occur while in `OPERATION_STATE`, the system logs the error and immediately forces a transition to `STARTUP_STATE` (stopping the motor).
 
-#### A. CAN Communication Timeout
+### A. CAN Communication Timeout
 * **Trigger:** No valid throttle message (`Control_ID`) is received for more than 500 ms (`WD_TIMEOUT_MS`).
 * **Consequence:** The communication timeout flag is set, triggering a global system fault that forces the state machine to `STARTUP_STATE` and drops the PWM to 0%. The node will not re-arm until communication is restored and the 2000 ms neutral interlock is satisfied.
 
-#### B. Invalid Throttle Value (Data Fault)
+### B. Invalid Throttle Value (Data Fault)
 * **Trigger:** The received `Control_ID` frame has a data length less than 1, or the payload value falls outside the bounds of `MIN_THROTTLE` (0) and `MAX_THROTTLE` (255).
 * **Consequence:** The frame is discarded, an error is logged, and a data fault flag is returned. This triggers a system fault, forces the node into `STARTUP_STATE`, and stops the motor.
 
-#### C. Motor Overtemperature
+### C. Motor Overtemperature
 * **Trigger:** The temperature value received via `MotorTemps_ID` exceeds `MAX_MOTOR_TEMP` (120 °C).
 * **Consequence:** An overtemperature error is logged and the high-temp flag is set. The global fault evaluator detects this, kicks the system into `STARTUP_STATE`, and halts the motor to allow cooling.
 
