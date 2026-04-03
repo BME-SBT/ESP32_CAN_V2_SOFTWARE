@@ -73,8 +73,18 @@ esp_err_t can_receive(twai_message_t *message, uint32_t timeout_ms) {
 esp_err_t can_deinit(void) {
     if (!is_initialized) return ESP_ERR_INVALID_STATE;
     
-    twai_stop();
-    twai_driver_uninstall();
+    esp_err_t err = twai_stop();
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to stop TWAI driver: %s", esp_err_to_name(err));
+        return err;
+    }
+
+    err = twai_driver_uninstall();
+    if (err != ESP_OK) {
+        ESP_LOGE(TAG, "Failed to uninstall TWAI driver: %s", esp_err_to_name(err));
+        return err;
+    }
+
     is_initialized = false;
     ESP_LOGI(TAG, "CAN stopped");
     return ESP_OK;
@@ -99,14 +109,4 @@ esp_err_t can_recover_bus(void) {
         ESP_LOGI(TAG, "Trying to recover CAN bus...");
     }
     return err;
-} 0; i < message.data_length_code; i++) {
-        message.data[i] = data[i];
-    }
-
-    return (twai_transmit(&message, pdMS_TO_TICKS(10)) == ESP_OK);
-}
-
-bool can_receive(twai_message_t *msg) {
-    // Non-blocking receive for use in task loops like Koxi's
-    return (twai_receive(msg, 0) == ESP_OK);
 }
