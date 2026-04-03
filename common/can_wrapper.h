@@ -18,6 +18,7 @@ typedef enum {
     CAN_BAUD_125K,
     CAN_BAUD_250K,
     CAN_BAUD_500K, // Both throttle and motorbox nodes use this
+    CAN_BAUD_1M    
 } can_baud_rate_t;
 
 typedef enum {
