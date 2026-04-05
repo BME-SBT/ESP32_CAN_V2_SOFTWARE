@@ -1,5 +1,4 @@
 #include "can_manager.h"
-
 #include "can_wrapper.h"
 #include "esp_log.h"
 #include "solar.h"
@@ -24,7 +23,8 @@ esp_err_t can_manager_init(void) {
   return ESP_OK;
 }
 
-esp_err_t can_manager_transmit(const twai_message_t *message, TickType_t ticks_to_wait) {
+esp_err_t can_manager_transmit(const twai_message_t *message,
+                               TickType_t ticks_to_wait) {
   if (!message) {
     return ESP_ERR_INVALID_ARG;
   }

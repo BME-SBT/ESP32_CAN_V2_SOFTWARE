@@ -11,7 +11,8 @@ extern "C" {
 #endif
 
 esp_err_t can_manager_init(void);
-esp_err_t can_manager_transmit(const twai_message_t *message, TickType_t ticks_to_wait);
+esp_err_t can_manager_transmit(const twai_message_t *message,
+                               TickType_t ticks_to_wait);
 void can_manager_handle_recovery(void);
 
 #ifdef __cplusplus

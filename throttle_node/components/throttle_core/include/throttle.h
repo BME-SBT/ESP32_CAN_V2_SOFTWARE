@@ -7,7 +7,7 @@
 #ifndef THROTTLE_H
 #define THROTTLE_H
 
-#include "../../../../common/can_protocol.h"
+#include "can_protocol.h"
 #include "esp_err.h"
 #include "solar.h"
 #include <stdint.h>
@@ -35,6 +35,11 @@ typedef struct {
  * @brief Initialise ADC and TWAI hardware
  */
 esp_err_t init_hardware(void);
+
+/**
+ * @brief Read the throttle sensor and validate the signal
+ */
+throttle_data_t read_and_validate_throttle(void);
 
 /**
  * @brief Main transmission task (50Hz)

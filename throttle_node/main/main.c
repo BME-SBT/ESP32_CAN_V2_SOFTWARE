@@ -1,6 +1,6 @@
 /**
  * @file main.c
- * @brief Application entry point for the throttle node
+ * @brief Application entry point for the throttle node.
  * @author Jaloliddin Ismailov
  */
 

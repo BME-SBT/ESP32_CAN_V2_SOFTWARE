@@ -1,12 +1,12 @@
 /**
  * @file throttle.c
- * @brief Implementation of throttle validation
+ * @brief Implementation of throttle validation.
  * @author Jaloliddin Ismailov
  */
 
 #include "throttle.h"
 
-#include "can_manager.h"
+#include "can_wrapper.h"
 #include "driver/adc.h"
 #include "esp_log.h"
 #include "esp_task_wdt.h"
@@ -17,14 +17,22 @@ static const char *TAG = "THROTTLE";
 
 // persists the error state between loops so telemetry reflects last CAN failure
 static uint8_t persistent_can_error_flag = 0;
-static uint32_t can_error_counter = 0;
+static uint32_t can_error_counter __attribute__((unused)) =
+    0; // this is not used yet
 
 esp_err_t init_hardware(void) {
   // ADC setup for GPIO 34 (ADC1_CH6)
   adc1_config_width(ADC_WIDTH_BIT_12);
   adc1_config_channel_atten(ADC1_CHANNEL_6, ADC_ATTEN_DB_11);
 
-  esp_err_t err = can_manager_init();
+  can_config_t can_config = {
+      .tx_pin = PIN_CAN_TX,
+      .rx_pin = PIN_CAN_RX,
+      .baud_rate = CAN_BAUD_500K,
+      .mode = CAN_MODE_NORMAL,
+  };
+
+  esp_err_t err = can_init(&can_config);
   if (err != ESP_OK) {
     ESP_LOGE(TAG, "CAN init failed: %s", esp_err_to_name(err));
     return err;
@@ -64,7 +72,7 @@ void can_transmit_task(void *pvParameters) {
   (void)pvParameters;
 
   // initialise watchdog BEFORE adding current task
-  esp_task_wdt_init(30, true);
+  esp_task_wdt_init(2, true);
   esp_task_wdt_add(NULL);
 
   ESP_LOGI(TAG, "CAN Transmit Task live at 50Hz");
@@ -80,13 +88,16 @@ void can_transmit_task(void *pvParameters) {
                           .data = {(uint8_t)data.percentage, data.status, 0, 0,
                                    0, 0, 0, msg_counter}};
 
-    if (can_manager_transmit(&msg, pdMS_TO_TICKS(10)) == ESP_OK) {
+    if (can_send(&msg, 10) == ESP_OK) {
       persistent_can_error_flag &= (uint8_t)(~STATUS_CAN_ERROR);
       msg_counter++;
     } else {
       persistent_can_error_flag |= STATUS_CAN_ERROR;
       can_error_counter++;
-      can_manager_handle_recovery();
+      if (can_is_bus_off()) {
+        ESP_LOGW(TAG, "Bus-off detected, initiating recovery");
+        (void)can_recover_bus();
+      }
     }
 
     vTaskDelay(pdMS_TO_TICKS(20)); // keep it steady at 50Hz
