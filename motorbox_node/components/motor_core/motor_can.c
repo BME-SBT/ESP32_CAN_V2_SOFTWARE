@@ -28,7 +28,7 @@ static twai_filter_config_t f_config = TWAI_FILTER_CONFIG_ACCEPT_ALL();
 
 void motor_can_init(void) {
     // Update watchdog, add extra time for system start
-    last_valid_msg_time = (xTaskGetTickCount() * portTICK_PERIOD_MS) + WD_TIMEOUT_MS
+    last_valid_msg_time = (xTaskGetTickCount() * portTICK_PERIOD_MS) + WD_TIMEOUT_MS;
 
     // Register frames before init, as requested by can_manager.h
     ESP_ERROR_CHECK(can_manager_register_frame(&controll_frame, true, true));
