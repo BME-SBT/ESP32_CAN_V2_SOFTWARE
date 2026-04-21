@@ -14,7 +14,6 @@
 #include "motor_can.h"
 #include "motor_config.h"
 #include "can_wrapper.h"
-#include "can_protocol.h"
 #include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
