@@ -8,7 +8,6 @@
 #define MOTOR_CONFIG_H
 
 #include <stdint.h>
-#include "solar.h"
 
 // --- MCPWM Hardware Configuration ---
 #define SETUP_GROUP                  0          // Group ID of all components of MCPWM
