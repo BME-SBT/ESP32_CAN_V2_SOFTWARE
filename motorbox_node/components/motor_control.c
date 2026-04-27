@@ -49,24 +49,29 @@ void ts_motorControlLoop(void *arg) {
                 ESP_LOGE(TAG, "CRITICAL: Entering FAULT state.");
             }
             current_state = STATE_FAULT;
-        } 
-        else if (current_state == STATE_FAULT) {
-            // @TODO: Add recovery logic
         }
+
+        else if (current_state == STATE_FAULT) {
+            if (throttle == 0) { // Unlatch fault only when throttle is zero
+                ESP_LOGI(TAG, "Fault cleared. Returning to IDLE.");
+                current_state = STATE_IDLE;
+            }
+        }
+
         else if (!is_enabled) {
             current_state = STATE_IDLE;
         }
+
         else if (throttle > 0) {
             current_state = STATE_RUNNING;
-        } 
+        }
+
         else {
             current_state = STATE_IDLE;
         }
 
         switch (current_state) {
-            case STATE_FAULT:
-                // @TODO
-                break;
+            case STATE_FAULT: // Falls down to STATE_IDLE to set throttle at 0
             case STATE_IDLE:
                 motor_pwm_set_throttle(0);
                 break;
