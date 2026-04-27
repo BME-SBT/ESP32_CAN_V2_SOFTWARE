@@ -30,9 +30,8 @@ typedef enum {
 static motor_state_t current_state = STATE_INIT;
 
 void ts_motorControlLoop(void *arg) {
-    // Phase 0: System Initialization
     motor_pwm_init();
-    motor_can_init(); // Spawns the background RX wrapper
+    motor_can_init();
 
     current_state = STATE_IDLE;
     ESP_LOGI(TAG, "Motor Control Loop Started.");
@@ -40,22 +39,22 @@ void ts_motorControlLoop(void *arg) {
     while (1) {
         bool throttle_fault = false;
 
-        // Phase 1: Read Network Inputs
-        // Instantly fetches from the thread-safe wrapper cache
         bool is_timeout = motor_can_is_timeout();
         bool is_temp_high = motor_can_is_temp_high();
+        bool is_enabled = motor_can_get_enable();
         uint8_t throttle = motor_can_get_throttle(&throttle_fault);
 
-        // Phase 2: Evaluate State Machine
-        // Safety always overrides operational states
         if (is_timeout || is_temp_high || throttle_fault) {
             if (current_state != STATE_FAULT) {
                 ESP_LOGE(TAG, "CRITICAL: Entering FAULT state.");
             }
-            current_state = STATE_FAULT; // Lock system into safe mode
+            current_state = STATE_FAULT;
         } 
-        else if (current_state == FAULT) {
-            // @TODO: Add recovery logic (e.g., waiting for zero throttle)
+        else if (current_state == STATE_FAULT) {
+            // @TODO: Add recovery logic
+        }
+        else if (!is_enabled) {
+            current_state = STATE_IDLE;
         }
         else if (throttle > 0) {
             current_state = STATE_RUNNING;
@@ -64,11 +63,12 @@ void ts_motorControlLoop(void *arg) {
             current_state = STATE_IDLE;
         }
 
-        // Phase 3: Actuate Hardware
         switch (current_state) {
             case STATE_FAULT:
+                // @TODO
+                break;
             case STATE_IDLE:
-                motor_pwm_set_throttle(0); // Hardware safe-stop
+                motor_pwm_set_throttle(0);
                 break;
 
             case STATE_RUNNING:
@@ -76,11 +76,10 @@ void ts_motorControlLoop(void *arg) {
                 break;
 
             default:
-                motor_pwm_set_throttle(0); // Fallback safe-stop
+                motor_pwm_set_throttle(0); 
                 break;
         }
 
-        // Yield CPU for the control loop period
         vTaskDelay(pdMS_TO_TICKS(10));
     }
 }
