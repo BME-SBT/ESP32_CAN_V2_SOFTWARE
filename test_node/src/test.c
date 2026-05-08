@@ -3,32 +3,24 @@
  * @brief Test node implementation - simulates throttle node with fault injection.
  *
  * Structure:
- *   - test_init_hardware()   -> (CAN only, no ADC)
- *   - can_transmit_task      -> same name, same frame layout, adds fault injection
- *   - test_rx_task           -> logs incoming frames from the motorbox
- *   - mode_switch_task       -> cycles through fault modes every 5 seconds
+ *   - test_init_hardware()     -> (CAN only, no ADC)
+ *   - adc_to_throttle()        -> ADC-to-percentage mapping
+ *   - run_adc_sweep()          -> steps through representative ADC values and logs expected vs actual
+ *   - build_frame_data()       -> frame builder
+ *   - can_transmit_task()      -> same name, same frame layout, adds fault injection
+ *   - test_rx_task()           -> logs incoming frames from the motorbox
+ *   - mode_switch_task()       -> cycles through fault modes every 20 seconds
+ *   - test_init()              -> public init
  */
  
 #include "test.h"
 #include "can_manager.h"
-#include "solar.h"
 #include "esp_log.h"
 #include "esp_task_wdt.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include <stdlib.h>
  
-// Status byte bitmasks
-#define STATUS_VALID            0x01
-#define STATUS_ADC_OUT_OF_RANGE 0x02
-#define STATUS_CAN_ERROR        0x04
- 
-// CAN ID for throttle messages - from solar.h
-#define THROTTLE_CAN_ID Control_ID
-
- 
-#define TX_PERIOD_MS     20    // Normal send period: 20ms = 50Hz
-#define MODE_DURATION_MS 5000  // How long each test mode runs before switching
  
 static const char *TAG = "TEST_NODE";
  
@@ -39,25 +31,86 @@ static uint8_t persistent_can_error_flag = 0;
 static uint32_t can_error_counter = 0;
  
 // For logging
+// Order must match test_mode_t enum
 static const char *mode_names[] = {
     "NORMAL", "INVALID_THROTTLE", "BAD_STATUS", "WRONG_COUNTER",
-    "TIMEOUT", "SLOW", "JITTER", "RANDOM"
+    "TIMEOUT", "SLOW", "JITTER", "RANDOM", "ADC_SWEEP"
 };
+
+// For ADC testing
+static const int32_t adc_sweep_values[] = { 200, 500, 2000, 3500, 4000 };
+static const int     adc_sweep_count    = sizeof(adc_sweep_values) / sizeof(adc_sweep_values[0]);
+static uint8_t       adc_sweep_step     = 0;
  
 
-// Mirrors init_hardware() in throttle.c, without ADC
+// ---------------------------------------------------------------------------
+// Hardware init - mirrors init_hardware() from throttle.c, without ADC
+// ---------------------------------------------------------------------------
+ 
 static esp_err_t test_init_hardware(void) {
     esp_err_t err = can_manager_init();
     if (err != ESP_OK) {
         ESP_LOGE(TAG, "CAN init failed: %s", esp_err_to_name(err));
         return err;
     }
-    ESP_LOGI(TAG, "Test node ready");
+    ESP_LOGI(TAG, "CAN started - TX:GPIO%d RX:GPIO%d", PIN_CAN_TX, PIN_CAN_RX);
+    ESP_LOGI(TAG, "THROTTLE_CAN_ID = 0x%03X (%d)", THROTTLE_CAN_ID, THROTTLE_CAN_ID);
     return ESP_OK;
+}
+
+
+// ---------------------------------------------------------------------------
+// ADC-to-percentage mapping - exact copy of throttle.c logic
+//
+// This replicates read_and_validate_throttle() from throttle.c so we can
+// verify the mapping produces correct results for any given raw ADC value.
+//
+// raw < ADC_MIN or raw > ADC_MAX  -> STATUS_ADC_OUT_OF_RANGE, percentage = 0
+// ADC_MIN <= raw <= ADC_MAX       -> STATUS_VALID, percentage = 0..100
+// ---------------------------------------------------------------------------
+ 
+static void adc_to_throttle(int32_t raw, uint8_t *throttle_out, uint8_t *status_out) {
+    if (raw < ADC_MIN || raw > ADC_MAX) {
+        *throttle_out = 0;
+        *status_out   = STATUS_ADC_OUT_OF_RANGE | persistent_can_error_flag;
+    } else {
+        int32_t scaled = (raw - ADC_MIN) * 100 / (ADC_MAX - ADC_MIN);
+        if (scaled > 100) scaled = 100;
+        if (scaled < 0)   scaled = 0;
+        *throttle_out = (uint8_t)scaled;
+        *status_out   = STATUS_VALID | persistent_can_error_flag;
+    }
 }
  
 
-// Instead of reading a real ADC, it generates values based on the current test mode. 
+// ---------------------------------------------------------------------------
+// ADC sweep - steps through representative ADC values and logs expected vs actual
+//
+// Tests three regions:
+//   1. Below ADC_MIN (200)  -> out of range, throttle=0
+//   2. At ADC_MIN (500)     -> valid, throttle=0%
+//   3. Midpoint (2000)      -> valid, throttle=50%
+//   4. At ADC_MAX (3500)    -> valid, throttle=100%
+//   5. Above ADC_MAX (4000) -> out of range, throttle=0
+// ---------------------------------------------------------------------------
+ 
+static void run_adc_sweep(uint8_t *throttle_out, uint8_t *status_out, int step) {
+    int32_t raw = adc_sweep_values[step];
+    adc_to_throttle(raw, throttle_out, status_out);
+ 
+    // Log what we expect and what we computed
+    bool in_range = (raw >= ADC_MIN && raw <= ADC_MAX);
+    ESP_LOGI(TAG, "[ADC_SWEEP] step=%d raw=%ld -> throttle=%d%% status=0x%02X (%s)",
+             step, raw, *throttle_out, *status_out,
+             in_range ? "VALID" : "OUT_OF_RANGE");
+}
+ 
+
+// ---------------------------------------------------------------------------
+// Frame builder - replaces read_and_validate_throttle() from throttle.c
+// Generates frame data based on current test mode instead of reading ADC.
+// ---------------------------------------------------------------------------
+
 static void build_frame_data(uint8_t *throttle_out, uint8_t *status_out,
                               uint8_t counter, uint8_t *data_out, bool *skip_out)
 {
@@ -69,9 +122,12 @@ static void build_frame_data(uint8_t *throttle_out, uint8_t *status_out,
  
     switch (current_mode) {
         case TEST_MODE_INVALID_THROTTLE:
-            throttle = 200; // Outside 0-100 range sent by real throttle node
+            // Sends throttle=200 (Outside 0-100 range sent by real throttle node) 
+            // with ADC_OUT_OF_RANGE status.
+            // Tests motorbox reaction to an out-of-range value.
+            // Note: motorbox MAX_THROTTLE=255, so this may not fault
+            throttle = 200; 
             status = STATUS_ADC_OUT_OF_RANGE | persistent_can_error_flag;
-            // status = STATUS_VALID | persistent_can_error_flag; // This might be better for testing
             break;
  
         case TEST_MODE_BAD_STATUS:
@@ -97,6 +153,13 @@ static void build_frame_data(uint8_t *throttle_out, uint8_t *status_out,
         case TEST_MODE_RANDOM:
             for (int i = 0; i < 8; i++) data_out[i] = (uint8_t)(rand() % 256); // Fully random 8-byte payload
             return; // data_out already filled, skip structured fill below
+
+        case TEST_MODE_ADC_SWEEP:
+            // Step through ADC values one at a time, advancing every TX cycle.
+            // Each step sends one frame with the computed throttle and status.
+            run_adc_sweep(&throttle, &status, adc_sweep_step);
+            adc_sweep_step = (adc_sweep_step + 1) % adc_sweep_count;
+            break;
  
         default:
             break;
@@ -117,7 +180,10 @@ static void build_frame_data(uint8_t *throttle_out, uint8_t *status_out,
 }
  
 
-// TX task
+// ---------------------------------------------------------------------------
+// TX task - mirrors can_transmit_task() from throttle.c
+// ---------------------------------------------------------------------------
+
 static void can_transmit_task(void *pvParameters) {
     uint8_t msg_counter = 0;
     (void)pvParameters;
@@ -165,7 +231,10 @@ static void can_transmit_task(void *pvParameters) {
 }
  
 
-// RX task - logs any incoming frames (e.g. from motorbox) - for observability during testing 
+// ---------------------------------------------------------------------------
+// RX task - logs all incoming CAN frames (e.g. from motorbox) - for observability during testing
+// ---------------------------------------------------------------------------
+
 static void test_rx_task(void *pvParameters) {
     (void)pvParameters;
     twai_message_t rx_msg;
@@ -182,7 +251,10 @@ static void test_rx_task(void *pvParameters) {
 }
  
 
-// Mode switch task - cycles through test modes automatically
+// ---------------------------------------------------------------------------
+// Mode switch task - cycles through all test modes every 20 seconds
+// ---------------------------------------------------------------------------
+
 static void mode_switch_task(void *pvParameters) {
     (void)pvParameters;
  
@@ -196,7 +268,10 @@ static void mode_switch_task(void *pvParameters) {
 }
  
 
+// ---------------------------------------------------------------------------
 // Public init
+// ---------------------------------------------------------------------------
+
 void test_init(void) {
     ESP_LOGI(TAG, "Test node starting...");
     ESP_ERROR_CHECK(test_init_hardware());
