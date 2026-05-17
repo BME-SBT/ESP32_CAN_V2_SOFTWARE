@@ -40,7 +40,6 @@ static const char *mode_names[] = {
 // For ADC testing
 static const int32_t adc_sweep_values[] = { 200, 500, 2000, 3500, 4000 };
 static const int     adc_sweep_count    = sizeof(adc_sweep_values) / sizeof(adc_sweep_values[0]);
-static uint8_t       adc_sweep_step     = 0;
  
 
 // ---------------------------------------------------------------------------
@@ -119,6 +118,7 @@ static void build_frame_data(uint8_t *throttle_out, uint8_t *status_out,
     uint8_t status      = STATUS_VALID | persistent_can_error_flag;
     uint8_t seq_counter = counter;
     *skip_out = false;
+    static uint8_t adc_sweep_step = 0;
  
     switch (current_mode) {
         case TEST_MODE_INVALID_THROTTLE:
