@@ -1,4 +1,4 @@
 idf_component_register(SRCS "throttle.c"
                        INCLUDE_DIRS "include"
-                       REQUIRES common driver freertos)
+                       REQUIRES common driver freertos can_manager)
 target_compile_options(${COMPONENT_LIB} PRIVATE "-Wall" "-Wextra" "-Wpedantic")

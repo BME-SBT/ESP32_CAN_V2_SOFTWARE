@@ -1,0 +1,2 @@
+source C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/gdbinit/symbols
+source C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/gdbinit/connect
