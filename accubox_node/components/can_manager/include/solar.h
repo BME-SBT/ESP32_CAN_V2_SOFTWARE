@@ -27,6 +27,9 @@
 #define PIN_LATCH GPIO_NUM_10
 #define PIN_DATA GPIO_NUM_11
 
+#define GPIO_DIR_INPUT 1
+#define GPIO_DIR_OUTPUT 2
+
 // used instead of gpio_set_direction for compatibility with this target
 static inline void gpio_set_dir(int gpio, int mode) {
     gpio_config_t io_conf = {.pin_bit_mask = (1ULL << gpio),
@@ -35,10 +38,10 @@ static inline void gpio_set_dir(int gpio, int mode) {
                              .pull_down_en = GPIO_PULLDOWN_DISABLE,
                              .intr_type = GPIO_INTR_DISABLE};
 
-    if (mode == 2) {
+    if (mode == GPIO_DIR_OUTPUT) {
         io_conf.mode = GPIO_MODE_OUTPUT;
     }
-    if (mode == 1) {
+    if (mode == GPIO_DIR_INPUT) {
         io_conf.mode = GPIO_MODE_INPUT;
     }
 

@@ -25,11 +25,11 @@ esp_err_t can_manager_init(void) {
 }
 
 esp_err_t can_manager_transmit(const twai_message_t *message,
-                               TickType_t ticks_to_wait) {
+                               uint32_t timeout_ms) {
     if (!message) {
         return ESP_ERR_INVALID_ARG;
     }
-    return can_send(message, pdTICKS_TO_MS(ticks_to_wait));
+    return can_send(message, timeout_ms);
 }
 
 void can_manager_handle_recovery(void) {

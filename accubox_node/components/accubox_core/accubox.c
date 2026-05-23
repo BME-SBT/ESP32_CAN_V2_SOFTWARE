@@ -15,7 +15,7 @@
 static const char *TAG = "ACCUBOX";
 
 #define ACCUBOX_TX_PERIOD_MS 100
-#define ACCUBOX_TX_TIMEOUT_TICKS pdMS_TO_TICKS(10)
+#define ACCUBOX_TX_TIMEOUT_MS 10
 
 typedef struct __attribute__((packed)) {
     bms_data_msg_t data;
@@ -101,16 +101,16 @@ void accubox_transmit_task(void *pvParameters) {
 
         accubox_build_frames(&bms_data_msg, &bms_extra_msg);
 
-        esp_err_t data_err = can_manager_transmit(&bms_data_msg,
-                                                  ACCUBOX_TX_TIMEOUT_TICKS);
+        esp_err_t data_err =
+            can_manager_transmit(&bms_data_msg, ACCUBOX_TX_TIMEOUT_MS);
         if (data_err != ESP_OK) {
             ESP_LOGW(TAG, "Failed to transmit BMS data: %s",
                      esp_err_to_name(data_err));
             can_manager_handle_recovery();
         }
 
-        esp_err_t extra_err = can_manager_transmit(&bms_extra_msg,
-                                                   ACCUBOX_TX_TIMEOUT_TICKS);
+        esp_err_t extra_err =
+            can_manager_transmit(&bms_extra_msg, ACCUBOX_TX_TIMEOUT_MS);
         if (extra_err != ESP_OK) {
             ESP_LOGW(TAG, "Failed to transmit BMS extra data: %s",
                      esp_err_to_name(extra_err));
