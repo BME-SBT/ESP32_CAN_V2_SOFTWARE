@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "throttle_node",
-    "project_version":    "1d8fd7d-dirty",
+    "project_version":    "6b8fcb3-dirty",
     "project_path":       "C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node",
     "idf_path":           "C:/esp/v5.5.4/esp-idf",
     "build_dir":          "C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build",
