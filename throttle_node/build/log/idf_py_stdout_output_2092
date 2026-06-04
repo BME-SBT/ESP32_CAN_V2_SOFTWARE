@@ -1,0 +1,501 @@
+Command: ninja all
+[1/139] Linking C static library esp-idf\protobuf-c\libprotobuf-c.a
+[2/139] Linking C static library esp-idf\console\libconsole.a
+[3/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/constants.pb-c.c.obj
+[4/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/session.pb-c.c.obj
+[5/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec1.pb-c.c.obj
+[6/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec2.pb-c.c.obj
+[7/139] Building C object esp-idf/common/CMakeFiles/__idf_common.dir/can_wrapper.c.obj
+[8/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec0.pb-c.c.obj
+[9/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security0.c.obj
+[10/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/common/protocomm.c.obj
+[11/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports/protocomm_httpd.c.obj
+[12/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports/protocomm_console.c.obj
+[13/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security1.c.obj
+[14/139] Building C object esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir/src/https_server.c.obj
+[15/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security/security2.c.obj
+[16/139] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/SPI_Flash.cpp.obj
+[17/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp_mpi.c.obj
+[18/139] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/Partition.cpp.obj
+[19/139] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp.c.obj
+[20/139] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/crc32.cpp.obj
+[21/139] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Perf.cpp.obj
+[22/139] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Ext_Safe.cpp.obj
+[23/139] Linking C static library esp-idf\common\libcommon.a
+[24/139] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/wear_levelling.cpp.obj
+[25/139] Building C object esp-idf/cmock/CMakeFiles/__idf_cmock.dir/CMock/src/cmock.c.obj
+[26/139] Building C object esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON_Utils.c.obj
+[27/139] Linking C static library esp-idf\unity\libunity.a
+[28/139] Building CXX object esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir/WL_Flash.cpp.obj
+[29/139] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/host_file_io.c.obj
+[30/139] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace_util.c.obj
+[31/139] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/dvp_share_ctrl.c.obj
+[32/139] Building C object esp-idf/throttle_core/CMakeFiles/__idf_throttle_core.dir/throttle.c.obj
+In file included from C:/esp/v5.5.4/esp-idf/components/esp_common/include/esp_err.h:10,
+                 from C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/components/throttle_core/include/throttle.h:11,
+                 from C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/components/throttle_core/throttle.c:6:
+C:/esp/v5.5.4/esp-idf/components/newlib/platform_include/stdio.h:8:2: warning: #include_next is a GCC extension
+    8 | #include_next <stdio.h>
+      |  ^~~~~~~~~~~~
+In file included from C:/esp/v5.5.4/esp-idf/components/soc/esp32c6/register/soc/interrupt_matrix_reg.h:8,
+                 from C:/esp/v5.5.4/esp-idf/components/soc/esp32c6/include/soc/interrupt_reg.h:8,
+                 from C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:12,
+                 from C:/esp/v5.5.4/esp-idf/components/esp_hw_support/include/esp_cpu.h:19,
+                 from C:/esp/v5.5.4/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from C:/esp/v5.5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:65,
+                 from C:/esp/v5.5.4/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from C:/esp/v5.5.4/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from C:/esp/v5.5.4/esp-idf/components/driver/twai/include/driver/twai.h:9,
+                 from C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/common/can_wrapper.h:10,
+                 from C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/components/throttle_core/throttle.c:8:
+C:/esp/v5.5.4/esp-idf/components/riscv/include/esp_private/interrupt_plic.h: In function 'rv_utils_intr_get_enabled_mask':
+C:/esp/v5.5.4/esp-idf/components/soc/esp32c6/include/soc/soc.h:43:22: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   43 | #define REG_READ(_r) ({                                                                                                \
+      |                      ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/esp_private/interrupt_plic.h:56:12: note: in expansion of macro 'REG_READ'
+   56 |     return REG_READ(INTERRUPT_CORE0_CPU_INT_ENABLE_REG);
+      |            ^~~~~~~~
+In file included from C:/esp/v5.5.4/esp-idf/components/esp_hw_support/include/esp_cpu.h:18:
+C:/esp/v5.5.4/esp-idf/components/riscv/include/esp_private/interrupt_plic.h: In function 'rv_utils_set_intlevel_regval':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:218:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  218 | #define RV_CLEAR_CSR(reg, bit) ({ unsigned long __tmp; \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/esp_private/interrupt_plic.h:109:28: note: in expansion of macro 'RV_CLEAR_CSR'
+  109 |     uint32_t old_mstatus = RV_CLEAR_CSR(mstatus, MSTATUS_MIE);
+      |                            ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/soc/esp32c6/include/soc/soc.h:43:22: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   43 | #define REG_READ(_r) ({                                                                                                \
+      |                      ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/esp_private/interrupt_plic.h:110:27: note: in expansion of macro 'REG_READ'
+  110 |     uint32_t old_thresh = REG_READ(INTERRUPT_CURRENT_CORE_INT_THRESH_REG);
+      |                           ^~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:214:30: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  214 | #define RV_SET_CSR(reg, bit) ({ unsigned long __tmp; \
+      |                              ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/esp_private/interrupt_plic.h:112:5: note: in expansion of macro 'RV_SET_CSR'
+  112 |     RV_SET_CSR(mstatus, old_mstatus & MSTATUS_MIE);
+      |     ^~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_get_cycle_count':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:204:26: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  204 | #define RV_READ_CSR(reg) ({ unsigned long __tmp; \
+      |                          ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:110:16: note: in expansion of macro 'RV_READ_CSR'
+  110 |         return RV_READ_CSR(CSR_PCCR_MACHINE);
+      |                ^~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:204:26: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  204 | #define RV_READ_CSR(reg) ({ unsigned long __tmp; \
+      |                          ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:112:16: note: in expansion of macro 'RV_READ_CSR'
+  112 |         return RV_READ_CSR(CSR_PCCR_USER);
+      |                ^~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_set_cycle_count':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:127:9: note: in expansion of macro 'RV_WRITE_CSR'
+  127 |         RV_WRITE_CSR(CSR_PCCR_MACHINE, ccount);
+      |         ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:129:9: note: in expansion of macro 'RV_WRITE_CSR'
+  129 |         RV_WRITE_CSR(CSR_PCCR_USER, ccount);
+      |         ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_set_mtvec':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:154:5: note: in expansion of macro 'RV_WRITE_CSR'
+  154 |     RV_WRITE_CSR(mtvec, mtvec_val | MTVEC_MODE_CSR);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_set_xtvec':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:161:9: note: in expansion of macro 'RV_WRITE_CSR'
+  161 |         RV_WRITE_CSR(mtvec, xtvec_val);
+      |         ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:163:9: note: in expansion of macro 'RV_WRITE_CSR'
+  163 |         RV_WRITE_CSR(utvec, xtvec_val);
+      |         ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_intr_enable':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:218:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  218 | #define RV_CLEAR_CSR(reg, bit) ({ unsigned long __tmp; \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:175:28: note: in expansion of macro 'RV_CLEAR_CSR'
+  175 |     unsigned old_mstatus = RV_CLEAR_CSR(mstatus, MSTATUS_MIE);
+      |                            ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:214:30: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  214 | #define RV_SET_CSR(reg, bit) ({ unsigned long __tmp; \
+      |                              ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:177:5: note: in expansion of macro 'RV_SET_CSR'
+  177 |     RV_SET_CSR(mstatus, old_mstatus & MSTATUS_MIE);
+      |     ^~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_intr_disable':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:218:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  218 | #define RV_CLEAR_CSR(reg, bit) ({ unsigned long __tmp; \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:187:28: note: in expansion of macro 'RV_CLEAR_CSR'
+  187 |     unsigned old_mstatus = RV_CLEAR_CSR(mstatus, MSTATUS_MIE);
+      |                            ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:214:30: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  214 | #define RV_SET_CSR(reg, bit) ({ unsigned long __tmp; \
+      |                              ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:189:5: note: in expansion of macro 'RV_SET_CSR'
+  189 |     RV_SET_CSR(mstatus, old_mstatus & MSTATUS_MIE);
+      |     ^~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_intr_global_enable':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:214:30: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  214 | #define RV_SET_CSR(reg, bit) ({ unsigned long __tmp; \
+      |                              ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:198:5: note: in expansion of macro 'RV_SET_CSR'
+  198 |     RV_SET_CSR(mstatus, MSTATUS_MIE);
+      |     ^~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_intr_global_disable':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:218:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  218 | #define RV_CLEAR_CSR(reg, bit) ({ unsigned long __tmp; \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:211:5: note: in expansion of macro 'RV_CLEAR_CSR'
+  211 |     RV_CLEAR_CSR(mstatus, MSTATUS_MIE);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_set_breakpoint':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:354:5: note: in expansion of macro 'RV_WRITE_CSR'
+  354 |     RV_WRITE_CSR(tselect, bp_num);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:355:5: note: in expansion of macro 'RV_WRITE_CSR'
+  355 |     RV_WRITE_CSR(tcontrol, TCONTROL_MPTE | TCONTROL_MTE);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:356:5: note: in expansion of macro 'RV_WRITE_CSR'
+  356 |     RV_WRITE_CSR(tdata1, TDATA1_USER | TDATA1_MACHINE | TDATA1_EXECUTE);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:357:5: note: in expansion of macro 'RV_WRITE_CSR'
+  357 |     RV_WRITE_CSR(tdata2, bp_addr);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_set_watchpoint':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:366:5: note: in expansion of macro 'RV_WRITE_CSR'
+  366 |     RV_WRITE_CSR(tselect, wp_num);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:367:5: note: in expansion of macro 'RV_WRITE_CSR'
+  367 |     RV_WRITE_CSR(tcontrol, TCONTROL_MPTE | TCONTROL_MTE);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:368:5: note: in expansion of macro 'RV_WRITE_CSR'
+  368 |     RV_WRITE_CSR(tdata1, TDATA1_USER                   |
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:395:5: note: in expansion of macro 'RV_WRITE_CSR'
+  395 |     RV_WRITE_CSR(tdata2, match_pattern);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_clear_breakpoint':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:400:5: note: in expansion of macro 'RV_WRITE_CSR'
+  400 |     RV_WRITE_CSR(tselect, bp_num);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:404:5: note: in expansion of macro 'RV_WRITE_CSR'
+  404 |     RV_WRITE_CSR(tdata1, 0);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h: In function 'rv_utils_is_trigger_fired':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:207:32: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  207 | #define RV_WRITE_CSR(reg, val) ({ \
+      |                                ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:415:5: note: in expansion of macro 'RV_WRITE_CSR'
+  415 |     RV_WRITE_CSR(tselect, id);
+      |     ^~~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:204:26: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  204 | #define RV_READ_CSR(reg) ({ unsigned long __tmp; \
+      |                          ^
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/rv_utils.h:416:13: note: in expansion of macro 'RV_READ_CSR'
+  416 |     return (RV_READ_CSR(tdata1) >> TDATA1_HIT_S) & 1;
+      |             ^~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/esp_hw_support/include/esp_cpu.h: In function 'esp_cpu_get_curr_privilege_level':
+C:/esp/v5.5.4/esp-idf/components/riscv/include/riscv/csr.h:204:26: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+  204 | #define RV_READ_CSR(reg) ({ unsigned long __tmp; \
+      |                          ^
+C:/esp/v5.5.4/esp-idf/components/esp_hw_support/include/esp_cpu.h:154:12: note: in expansion of macro 'RV_READ_CSR'
+  154 |     return RV_READ_CSR(CSR_PRV_MODE);
+      |            ^~~~~~~~~~~
+C:/esp/v5.5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h: In function 'xPortCanYield':
+C:/esp/v5.5.4/esp-idf/components/soc/esp32c6/include/soc/soc.h:43:22: warning: ISO C forbids braced-groups within expressions [-Wpedantic]
+   43 | #define REG_READ(_r) ({                                                                                                \
+      |                      ^
+C:/esp/v5.5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:699:26: note: in expansion of macro 'REG_READ'
+  699 |     uint32_t threshold = REG_READ(INTERRUPT_CURRENT_CORE_INT_THRESH_REG);
+      |                          ^~~~~~~~
+In file included from C:/esp/v5.5.4/esp-idf/components/esp_common/include/esp_types.h:11,
+                 from C:/esp/v5.5.4/esp-idf/components/driver/twai/include/driver/twai.h:10:
+C:/esp/v5.5.4/esp-idf/components/newlib/platform_include/sys/cdefs.h: At top level:
+C:/esp/v5.5.4/esp-idf/components/newlib/platform_include/sys/cdefs.h:6:2: warning: #include_next is a GCC extension
+    6 | #include_next <sys/cdefs.h>
+      |  ^~~~~~~~~~~~
+[33/139] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/app_trace.c.obj
+[34/139] Building C object esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj
+[35/139] Building C object esp-idf/json/CMakeFiles/__idf_json.dir/cJSON/cJSON.c.obj
+[36/139] Building C object esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/esp_cam_ctlr.c.obj
+[37/139] Linking C static library esp-idf\esp_hal_ieee802154\libesp_hal_ieee802154.a
+[38/139] Linking C static library esp-idf\esp_https_server\libesp_https_server.a
+[39/139] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_common.c.obj
+[40/139] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj
+[41/139] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj
+[42/139] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj
+[43/139] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj
+[44/139] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj
+[45/139] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ops.c.obj
+[46/139] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io.c.obj
+[47/139] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj
+[48/139] Linking C static library esp-idf\protocomm\libprotocomm.a
+[49/139] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ssd1306.c.obj
+[50/139] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_init.c.obj
+[51/139] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i2c/esp_lcd_panel_io_i2c_v1.c.obj
+[52/139] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i2c/esp_lcd_panel_io_i2c_v2.c.obj
+[53/139] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_nt35510.c.obj
+[54/139] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_st7789.c.obj
+[55/139] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/spi/esp_lcd_panel_io_spi.c.obj
+[56/139] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_crc.c.obj
+[57/139] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_sha.c.obj
+[58/139] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_handler.c.obj
+[59/139] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_transport_httpd.c.obj
+[60/139] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/proto-c/esp_local_ctrl.pb-c.c.obj
+[61/139] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl.c.obj
+[62/139] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_common.c.obj
+[63/139] Linking C static library esp-idf\wear_levelling\libwear_levelling.a
+[64/139] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj
+[65/139] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_elf.c.obj
+[66/139] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_binary.c.obj
+[67/139] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port/riscv/core_dump_port.c.obj
+[68/139] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_flash.c.obj
+[69/139] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ffunicode.c.obj
+[70/139] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_wl.c.obj
+[71/139] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos/ffsystem.c.obj
+[72/139] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio.c.obj
+[73/139] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj
+[74/139] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_sdmmc.c.obj
+[75/139] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_spiflash.c.obj
+[76/139] Building C object esp-idf/ieee802154/CMakeFiles/__idf_ieee802154.dir/driver/esp_ieee802154_event.c.obj
+[77/139] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat_sdmmc.c.obj
+[78/139] Building C object esp-idf/ieee802154/CMakeFiles/__idf_ieee802154.dir/driver/esp_ieee802154_ack.c.obj
+[79/139] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src/ff.c.obj
+[80/139] Building C object esp-idf/ieee802154/CMakeFiles/__idf_ieee802154.dir/driver/esp_ieee802154_timer.c.obj
+[81/139] Building C object esp-idf/ieee802154/CMakeFiles/__idf_ieee802154.dir/esp_ieee802154.c.obj
+[82/139] Building C object esp-idf/ieee802154/CMakeFiles/__idf_ieee802154.dir/driver/esp_ieee802154_pib.c.obj
+[83/139] Building C object esp-idf/ieee802154/CMakeFiles/__idf_ieee802154.dir/driver/esp_ieee802154_frame.c.obj
+[84/139] Linking C static library esp-idf\json\libjson.a
+[85/139] Building C object esp-idf/ieee802154/CMakeFiles/__idf_ieee802154.dir/driver/esp_ieee802154_sec.c.obj
+[86/139] Building C object esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs/vfs_fat.c.obj
+[87/139] Building C object esp-idf/ieee802154/CMakeFiles/__idf_ieee802154.dir/driver/esp_ieee802154_util.c.obj
+[88/139] Building C object esp-idf/ieee802154/CMakeFiles/__idf_ieee802154.dir/driver/esp_ieee802154_dev.c.obj
+[89/139] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj
+[90/139] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj
+[91/139] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj
+[92/139] Building C object esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj
+[93/139] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.obj
+[94/139] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj
+[95/139] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.obj
+[96/139] Building C object esp-idf/rt/CMakeFiles/__idf_rt.dir/FreeRTOS_POSIX_utils.c.obj
+[97/139] Building C object esp-idf/rt/CMakeFiles/__idf_rt.dir/FreeRTOS_POSIX_mqueue.c.obj
+[98/139] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj
+[99/139] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj
+[100/139] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj
+[101/139] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.obj
+[102/139] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_ctrl.c.obj
+[103/139] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_config.c.obj
+[104/139] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_config.pb-c.c.obj
+[105/139] Linking C static library esp-idf\throttle_core\libthrottle_core.a
+[106/139] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj
+[107/139] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_ctrl.pb-c.c.obj
+[108/139] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_constants.pb-c.c.obj
+[109/139] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_scan.c.obj
+[110/139] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_console.c.obj
+[111/139] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/handlers.c.obj
+[112/139] Linking C static library esp-idf\app_trace\libapp_trace.a
+[113/139] Linking C static library esp-idf\cmock\libcmock.a
+[114/139] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_scan.pb-c.c.obj
+[115/139] Linking C static library esp-idf\esp_driver_cam\libesp_driver_cam.a
+[116/139] Linking C static library esp-idf\esp_eth\libesp_eth.a
+[117/139] Linking C static library esp-idf\esp_hid\libesp_hid.a
+[118/139] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[119/139] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_softap.c.obj
+[120/139] Linking C static library esp-idf\esp_lcd\libesp_lcd.a
+[121/139] Linking C static library esp-idf\espcoredump\libespcoredump.a
+[122/139] Linking C static library esp-idf\fatfs\libfatfs.a
+[123/139] Linking C static library esp-idf\nvs_sec_provider\libnvs_sec_provider.a
+[124/139] Linking C static library esp-idf\ieee802154\libieee802154.a
+[125/139] Linking C static library esp-idf\mqtt\libmqtt.a
+[126/139] Linking C static library esp-idf\esp_local_ctrl\libesp_local_ctrl.a
+[127/139] Linking C static library esp-idf\rt\librt.a
+[128/139] Linking C static library esp-idf\main\libmain.a
+[129/139] Linking C static library esp-idf\spiffs\libspiffs.a
+[130/139] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/manager.c.obj
+[131/139] Linking C static library esp-idf\wifi_provisioning\libwifi_provisioning.a
+[132/139] Performing build step for 'bootloader'
+[1/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/util.c.obj
+[2/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_lock.c.obj
+[3/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_timestamp_common.c.obj
+[4/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj
+[5/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/util.c.obj
+[6/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/noos/log_timestamp.c.obj
+[7/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.obj
+[8/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj
+[9/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj
+[10/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj
+[11/123] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.obj
+[12/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj
+[13/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj
+[14/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj
+[15/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_usb_serial.c.obj
+[16/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj
+[17/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj
+[18/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj
+[19/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_hp_regi2c_esp32c6.c.obj
+[20/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj
+[21/123] Building C object esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj
+[22/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/esp_cpu_intr.c.obj
+[23/123] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj
+[24/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj
+[25/123] Linking C static library esp-idf\log\liblog.a
+[26/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/cpu_region_protect.c.obj
+[27/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/chip_info.c.obj
+[28/123] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
+[29/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/pmu_param.c.obj
+[30/123] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c6/esp_efuse_table.c.obj
+[31/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/rtc_clk_init.c.obj
+[32/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/ocode_init.c.obj
+[33/123] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c6/esp_efuse_fields.c.obj
+[34/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/pmu_init.c.obj
+[35/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/rtc_time.c.obj
+[36/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/rtc_clk.c.obj
+[37/123] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c6/esp_efuse_rtc_calib.c.obj
+[38/123] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/pmu_sleep.c.obj
+[39/123] Linking C static library esp-idf\esp_rom\libesp_rom.a
+[40/123] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c6/esp_efuse_utility.c.obj
+[41/123] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj
+[42/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj
+[43/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[44/123] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj
+[45/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj
+[46/123] Linking C static library esp-idf\esp_common\libesp_common.a
+[47/123] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj
+[48/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj
+[49/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj
+[50/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj
+[51/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32c6.c.obj
+[52/123] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj
+[53/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj
+[54/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj
+[55/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32c6/bootloader_ecdsa.c.obj
+[56/123] Linking C static library esp-idf\esp_hw_support\libesp_hw_support.a
+[57/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_sha.c.obj
+[58/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32c6/bootloader_soc.c.obj
+[59/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_loader.c.obj
+[60/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj
+[61/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console_loader.c.obj
+[62/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32c6.c.obj
+[63/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj
+[64/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj
+[65/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj
+[66/123] Linking C static library esp-idf\esp_system\libesp_system.a
+[67/123] Building C object esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/esp_bootloader_desc.c.obj
+[68/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj
+[69/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
+[70/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/gpio_periph.c.obj
+[71/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_panic.c.obj
+[72/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/interrupts.c.obj
+[73/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
+[74/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/uart_periph.c.obj
+[75/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj
+[76/123] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj
+[77/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/adc_periph.c.obj
+[78/123] Linking C static library esp-idf\efuse\libefuse.a
+[79/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj
+[80/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/etm_periph.c.obj
+[81/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/dedic_gpio_periph.c.obj
+[82/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/pcnt_periph.c.obj
+[83/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/rmt_periph.c.obj
+[84/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/sdm_periph.c.obj
+[85/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/gdma_periph.c.obj
+[86/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/spi_periph.c.obj
+[87/123] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32c6/bootloader_esp32c6.c.obj
+[88/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/ledc_periph.c.obj
+[89/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/i2s_periph.c.obj
+[90/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/i2c_periph.c.obj
+[91/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/temperature_sensor_periph.c.obj
+[92/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/parlio_periph.c.obj
+[93/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/timer_periph.c.obj
+[94/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/mpi_periph.c.obj
+[95/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/mcpwm_periph.c.obj
+[96/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/wdt_periph.c.obj
+[97/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/rtc_io_periph.c.obj
+[98/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/power_supply_periph.c.obj
+[99/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/twai_periph.c.obj
+[100/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/sdio_slave_periph.c.obj
+[101/123] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6/system_retention_periph.c.obj
+[102/123] Generating project_elf_src_esp32c6.c
+[103/123] Building C object esp-idf/riscv/CMakeFiles/__idf_riscv.dir/rv_utils.c.obj
+[104/123] Linking C static library esp-idf\bootloader_support\libbootloader_support.a
+[105/123] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj
+[106/123] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/hal_utils.c.obj
+[107/123] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/lp_timer_hal.c.obj
+[108/123] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32c6/efuse_hal.c.obj
+[109/123] Building C object CMakeFiles/bootloader.elf.dir/project_elf_src_esp32c6.c.obj
+[110/123] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj
+[111/123] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj
+[112/123] Linking C static library esp-idf\esp_bootloader_format\libesp_bootloader_format.a
+[113/123] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj
+[114/123] Linking C static library esp-idf\spi_flash\libspi_flash.a
+[115/123] Building C object esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj
+[116/123] Linking C static library esp-idf\micro-ecc\libmicro-ecc.a
+[117/123] Linking C static library esp-idf\soc\libsoc.a
+[118/123] Linking C static library esp-idf\riscv\libriscv.a
+[119/123] Linking C static library esp-idf\hal\libhal.a
+[120/123] Linking C static library esp-idf\main\libmain.a
+[121/123] Linking C executable bootloader.elf
+[122/123] Generating binary image from built executable
+esptool.py v4.12.dev2
+Creating esp32c6 image...
+Merged 2 ELF sections
+Successfully created esp32c6 image.
+Generated C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/bootloader.bin
+[123/123] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\berni\Documents\SBT\ESP32_CAN_V2_SOFTWARE\throttle_node\build\bootloader\esp-idf\esptool_py && C:\Espressif\tools\python\v5.5.4\venv\Scripts\python.exe C:/esp/v5.5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/bootloader.bin"
+Bootloader binary size 0x57c0 bytes. 0x2840 bytes (31%) free.
+[133/139] No install step for 'bootloader'
+[134/139] Completed 'bootloader'
+[135/139] Generating esp-idf/esp_system/ld/sections.ld
+[136/139] Building C object CMakeFiles/throttle_node.elf.dir/project_elf_src_esp32c6.c.obj
+[137/139] Linking CXX executable throttle_node.elf
+[138/139] Generating binary image from built executable
+esptool.py v4.12.dev2
+Creating esp32c6 image...
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/throttle_node.bin
+[139/139] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\berni\Documents\SBT\ESP32_CAN_V2_SOFTWARE\throttle_node\build\esp-idf\esptool_py && C:\Espressif\tools\python\v5.5.4\venv\Scripts\python.exe C:/esp/v5.5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/partition_table/partition-table.bin C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/throttle_node.bin"
+throttle_node.bin binary size 0x2dd00 bytes. Smallest app partition is 0x100000 bytes. 0xd2300 bytes (82%) free.

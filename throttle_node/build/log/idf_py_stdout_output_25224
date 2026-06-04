@@ -1,0 +1,8 @@
+Command: ninja all
+[1/4] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\berni\Documents\SBT\ESP32_CAN_V2_SOFTWARE\throttle_node\build\esp-idf\esptool_py && C:\Espressif\tools\python\v5.5.4\venv\Scripts\python.exe C:/esp/v5.5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/partition_table/partition-table.bin C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/throttle_node.bin"
+throttle_node.bin binary size 0x2dd00 bytes. Smallest app partition is 0x100000 bytes. 0xd2300 bytes (82%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\berni\Documents\SBT\ESP32_CAN_V2_SOFTWARE\throttle_node\build\bootloader\esp-idf\esptool_py && C:\Espressif\tools\python\v5.5.4\venv\Scripts\python.exe C:/esp/v5.5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/bootloader.bin"
+Bootloader binary size 0x57c0 bytes. 0x2840 bytes (31%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'

@@ -1,5 +1,1 @@
--Wno-frame-address
--mlongcalls
--fno-builtin-memcpy
--fno-builtin-memset
--fno-builtin-bzero
+-march=rv32imac_zicsr_zifencei
