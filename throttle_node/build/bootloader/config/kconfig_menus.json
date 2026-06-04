@@ -3,16 +3,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_CAPS_ECO_VER_MAX",
-        "name": "SOC_CAPS_ECO_VER_MAX",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_ADC_SUPPORTED",
         "name": "SOC_ADC_SUPPORTED",
         "range": null,
@@ -23,8 +13,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_DAC_SUPPORTED",
-        "name": "SOC_DAC_SUPPORTED",
+        "id": "SOC_DEDICATED_GPIO_SUPPORTED",
+        "name": "SOC_DEDICATED_GPIO_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -43,8 +33,28 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_MCPWM_SUPPORTED",
-        "name": "SOC_MCPWM_SUPPORTED",
+        "id": "SOC_UHCI_SUPPORTED",
+        "name": "SOC_UHCI_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GDMA_SUPPORTED",
+        "name": "SOC_GDMA_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_AHB_GDMA_SUPPORTED",
+        "name": "SOC_AHB_GDMA_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -63,8 +73,48 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_SDMMC_HOST_SUPPORTED",
-        "name": "SOC_SDMMC_HOST_SUPPORTED",
+        "id": "SOC_PCNT_SUPPORTED",
+        "name": "SOC_PCNT_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MCPWM_SUPPORTED",
+        "name": "SOC_MCPWM_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TWAI_SUPPORTED",
+        "name": "SOC_TWAI_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ETM_SUPPORTED",
+        "name": "SOC_ETM_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PARLIO_SUPPORTED",
+        "name": "SOC_PARLIO_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -83,8 +133,38 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PCNT_SUPPORTED",
-        "name": "SOC_PCNT_SUPPORTED",
+        "id": "SOC_IEEE802154_SUPPORTED",
+        "name": "SOC_IEEE802154_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ASYNC_MEMCPY_SUPPORTED",
+        "name": "SOC_ASYNC_MEMCPY_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_USB_SERIAL_JTAG_SUPPORTED",
+        "name": "SOC_USB_SERIAL_JTAG_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TEMP_SENSOR_SUPPORTED",
+        "name": "SOC_TEMP_SENSOR_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -113,38 +193,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_SDIO_SLAVE_SUPPORTED",
-        "name": "SOC_SDIO_SLAVE_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TWAI_SUPPORTED",
-        "name": "SOC_TWAI_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_EFUSE_SUPPORTED",
-        "name": "SOC_EFUSE_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_EMAC_SUPPORTED",
-        "name": "SOC_EMAC_SUPPORTED",
+        "id": "SOC_SUPPORTS_SECURE_DL_MODE",
+        "name": "SOC_SUPPORTS_SECURE_DL_MODE",
         "range": null,
         "title": null,
         "type": "bool"
@@ -163,8 +213,28 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_CCOMP_TIMER_SUPPORTED",
-        "name": "SOC_CCOMP_TIMER_SUPPORTED",
+        "id": "SOC_LP_CORE_SUPPORTED",
+        "name": "SOC_LP_CORE_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EFUSE_KEY_PURPOSE_FIELD",
+        "name": "SOC_EFUSE_KEY_PURPOSE_FIELD",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EFUSE_SUPPORTED",
+        "name": "SOC_EFUSE_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -175,16 +245,6 @@
         "help": null,
         "id": "SOC_RTC_FAST_MEM_SUPPORTED",
         "name": "SOC_RTC_FAST_MEM_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTC_SLOW_MEM_SUPPORTED",
-        "name": "SOC_RTC_SLOW_MEM_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -263,6 +323,16 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_SYSTIMER_SUPPORTED",
+        "name": "SOC_SYSTIMER_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_SUPPORT_COEXISTENCE",
         "name": "SOC_SUPPORT_COEXISTENCE",
         "range": null,
@@ -303,6 +373,36 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_HMAC_SUPPORTED",
+        "name": "SOC_HMAC_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_DIG_SIGN_SUPPORTED",
+        "name": "SOC_DIG_SIGN_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ECC_SUPPORTED",
+        "name": "SOC_ECC_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_FLASH_ENC_SUPPORTED",
         "name": "SOC_FLASH_ENC_SUPPORTED",
         "range": null,
@@ -323,8 +423,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_TOUCH_SENSOR_SUPPORTED",
-        "name": "SOC_TOUCH_SENSOR_SUPPORTED",
+        "id": "SOC_SDIO_SLAVE_SUPPORTED",
+        "name": "SOC_SDIO_SLAVE_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -343,8 +443,88 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ULP_FSM_SUPPORTED",
-        "name": "SOC_ULP_FSM_SUPPORTED",
+        "id": "SOC_APM_SUPPORTED",
+        "name": "SOC_APM_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PMU_SUPPORTED",
+        "name": "SOC_PMU_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PMU_PVT_SUPPORTED",
+        "name": "SOC_PMU_PVT_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PAU_SUPPORTED",
+        "name": "SOC_PAU_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_TIMER_SUPPORTED",
+        "name": "SOC_LP_TIMER_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_AON_SUPPORTED",
+        "name": "SOC_LP_AON_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_PERIPHERALS_SUPPORTED",
+        "name": "SOC_LP_PERIPHERALS_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_I2C_SUPPORTED",
+        "name": "SOC_LP_I2C_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ULP_LP_UART_SUPPORTED",
+        "name": "SOC_ULP_LP_UART_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -363,8 +543,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_MPU_SUPPORTED",
-        "name": "SOC_MPU_SUPPORTED",
+        "id": "SOC_ASSIST_DEBUG_SUPPORTED",
+        "name": "SOC_ASSIST_DEBUG_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -423,8 +603,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_LP_PERIPH_SHARE_INTERRUPT",
-        "name": "SOC_LP_PERIPH_SHARE_INTERRUPT",
+        "id": "SOC_MODEM_CLOCK_SUPPORTED",
+        "name": "SOC_MODEM_CLOCK_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -443,26 +623,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_DPORT_WORKAROUND_DIS_INTERRUPT_LVL",
-        "name": "SOC_DPORT_WORKAROUND_DIS_INTERRUPT_LVL",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_XTAL_SUPPORT_26M",
-        "name": "SOC_XTAL_SUPPORT_26M",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_XTAL_SUPPORT_40M",
         "name": "SOC_XTAL_SUPPORT_40M",
         "range": null,
@@ -473,8 +633,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_XTAL_SUPPORT_AUTO_DETECT",
-        "name": "SOC_XTAL_SUPPORT_AUTO_DETECT",
+        "id": "SOC_XTAL_CLOCK_PATH_DEPENDS_ON_TOP_DOMAIN",
+        "name": "SOC_XTAL_CLOCK_PATH_DEPENDS_ON_TOP_DOMAIN",
         "range": null,
         "title": null,
         "type": "bool"
@@ -483,8 +643,38 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ADC_RTC_CTRL_SUPPORTED",
-        "name": "SOC_ADC_RTC_CTRL_SUPPORTED",
+        "id": "SOC_AES_SUPPORT_DMA",
+        "name": "SOC_AES_SUPPORT_DMA",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_AES_GDMA",
+        "name": "SOC_AES_GDMA",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_AES_SUPPORT_AES_128",
+        "name": "SOC_AES_SUPPORT_AES_128",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_AES_SUPPORT_AES_256",
+        "name": "SOC_AES_SUPPORT_AES_256",
         "range": null,
         "title": null,
         "type": "bool"
@@ -495,6 +685,26 @@
         "help": null,
         "id": "SOC_ADC_DIG_CTRL_SUPPORTED",
         "name": "SOC_ADC_DIG_CTRL_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ADC_DIG_IIR_FILTER_SUPPORTED",
+        "name": "SOC_ADC_DIG_IIR_FILTER_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ADC_MONITOR_SUPPORTED",
+        "name": "SOC_ADC_MONITOR_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -563,6 +773,16 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_ADC_DIGI_MAX_BITWIDTH",
+        "name": "SOC_ADC_DIGI_MAX_BITWIDTH",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_ADC_DIGI_MIN_BITWIDTH",
         "name": "SOC_ADC_DIGI_MIN_BITWIDTH",
         "range": null,
@@ -573,8 +793,18 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ADC_DIGI_MAX_BITWIDTH",
-        "name": "SOC_ADC_DIGI_MAX_BITWIDTH",
+        "id": "SOC_ADC_DIGI_IIR_FILTER_NUM",
+        "name": "SOC_ADC_DIGI_IIR_FILTER_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ADC_DIGI_MONITOR_NUM",
+        "name": "SOC_ADC_DIGI_MONITOR_NUM",
         "range": null,
         "title": null,
         "type": "int"
@@ -595,16 +825,6 @@
         "help": null,
         "id": "SOC_ADC_DIGI_DATA_BYTES_PER_CONV",
         "name": "SOC_ADC_DIGI_DATA_BYTES_PER_CONV",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_ADC_DIGI_MONITOR_NUM",
-        "name": "SOC_ADC_DIGI_MONITOR_NUM",
         "range": null,
         "title": null,
         "type": "int"
@@ -653,8 +873,58 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_ADC_CALIBRATION_V1_SUPPORTED",
+        "name": "SOC_ADC_CALIBRATION_V1_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ADC_SELF_HW_CALI_SUPPORTED",
+        "name": "SOC_ADC_SELF_HW_CALI_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED",
+        "name": "SOC_ADC_CALIB_CHAN_COMPENS_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ADC_TEMPERATURE_SHARE_INTR",
+        "name": "SOC_ADC_TEMPERATURE_SHARE_INTR",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_ADC_SHARED_POWER",
         "name": "SOC_ADC_SHARED_POWER",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_APB_BACKUP_DMA",
+        "name": "SOC_APB_BACKUP_DMA",
         "range": null,
         "title": null,
         "type": "bool"
@@ -683,8 +953,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_IDCACHE_PER_CORE",
-        "name": "SOC_IDCACHE_PER_CORE",
+        "id": "SOC_CACHE_FREEZE_SUPPORTED",
+        "name": "SOC_CACHE_FREEZE_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -713,8 +983,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_CPU_HAS_FPU",
-        "name": "SOC_CPU_HAS_FPU",
+        "id": "SOC_CPU_HAS_FLEXIBLE_INTC",
+        "name": "SOC_CPU_HAS_FLEXIBLE_INTC",
         "range": null,
         "title": null,
         "type": "bool"
@@ -723,8 +993,18 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_HP_CPU_HAS_MULTIPLE_CORES",
-        "name": "SOC_HP_CPU_HAS_MULTIPLE_CORES",
+        "id": "SOC_INT_PLIC_SUPPORTED",
+        "name": "SOC_INT_PLIC_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_CPU_HAS_CSR_PC",
+        "name": "SOC_CPU_HAS_CSR_PC",
         "range": null,
         "title": null,
         "type": "bool"
@@ -763,8 +1043,28 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_DAC_CHAN_NUM",
-        "name": "SOC_DAC_CHAN_NUM",
+        "id": "SOC_CPU_HAS_PMA",
+        "name": "SOC_CPU_HAS_PMA",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_CPU_IDRAM_SPLIT_USING_PMP",
+        "name": "SOC_CPU_IDRAM_SPLIT_USING_PMP",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_CPU_PMP_REGION_GRANULARITY",
+        "name": "SOC_CPU_PMP_REGION_GRANULARITY",
         "range": null,
         "title": null,
         "type": "int"
@@ -773,8 +1073,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_DAC_RESOLUTION",
-        "name": "SOC_DAC_RESOLUTION",
+        "id": "SOC_DS_SIGNATURE_MAX_BIT_LEN",
+        "name": "SOC_DS_SIGNATURE_MAX_BIT_LEN",
         "range": null,
         "title": null,
         "type": "int"
@@ -783,8 +1083,98 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_DAC_DMA_16BIT_ALIGN",
-        "name": "SOC_DAC_DMA_16BIT_ALIGN",
+        "id": "SOC_DS_KEY_PARAM_MD_IV_LENGTH",
+        "name": "SOC_DS_KEY_PARAM_MD_IV_LENGTH",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_DS_KEY_CHECK_MAX_WAIT_US",
+        "name": "SOC_DS_KEY_CHECK_MAX_WAIT_US",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_AHB_GDMA_VERSION",
+        "name": "SOC_AHB_GDMA_VERSION",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GDMA_NUM_GROUPS_MAX",
+        "name": "SOC_GDMA_NUM_GROUPS_MAX",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GDMA_PAIRS_PER_GROUP_MAX",
+        "name": "SOC_GDMA_PAIRS_PER_GROUP_MAX",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GDMA_SUPPORT_ETM",
+        "name": "SOC_GDMA_SUPPORT_ETM",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GDMA_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_GDMA_SUPPORT_SLEEP_RETENTION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ETM_GROUPS",
+        "name": "SOC_ETM_GROUPS",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ETM_CHANNELS_PER_GROUP",
+        "name": "SOC_ETM_CHANNELS_PER_GROUP",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_ETM_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_ETM_SUPPORT_SLEEP_RETENTION",
         "range": null,
         "title": null,
         "type": "bool"
@@ -813,11 +1203,61 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_GPIO_VALID_GPIO_MASK",
-        "name": "SOC_GPIO_VALID_GPIO_MASK",
+        "id": "SOC_GPIO_SUPPORT_PIN_GLITCH_FILTER",
+        "name": "SOC_GPIO_SUPPORT_PIN_GLITCH_FILTER",
         "range": null,
         "title": null,
-        "type": "hex"
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GPIO_FLEX_GLITCH_FILTER_NUM",
+        "name": "SOC_GPIO_FLEX_GLITCH_FILTER_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GPIO_SUPPORT_ETM",
+        "name": "SOC_GPIO_SUPPORT_ETM",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GPIO_SUPPORT_RTC_INDEPENDENT",
+        "name": "SOC_GPIO_SUPPORT_RTC_INDEPENDENT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GPIO_SUPPORT_DEEPSLEEP_WAKEUP",
+        "name": "SOC_GPIO_SUPPORT_DEEPSLEEP_WAKEUP",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_IO_CLOCK_IS_INDEPENDENT",
+        "name": "SOC_LP_IO_CLOCK_IS_INDEPENDENT",
+        "range": null,
+        "title": null,
+        "type": "bool"
     },
     {
         "children": [],
@@ -843,6 +1283,26 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_GPIO_DEEP_SLEEP_WAKE_VALID_GPIO_MASK",
+        "name": "SOC_GPIO_DEEP_SLEEP_WAKE_VALID_GPIO_MASK",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GPIO_DEEP_SLEEP_WAKE_SUPPORTED_PIN_CNT",
+        "name": "SOC_GPIO_DEEP_SLEEP_WAKE_SUPPORTED_PIN_CNT",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_GPIO_VALID_DIGITAL_IO_PAD_MASK",
         "name": "SOC_GPIO_VALID_DIGITAL_IO_PAD_MASK",
         "range": null,
@@ -853,8 +1313,38 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_GPIO_CLOCKOUT_BY_IO_MUX",
-        "name": "SOC_GPIO_CLOCKOUT_BY_IO_MUX",
+        "id": "SOC_GPIO_SUPPORT_FORCE_HOLD",
+        "name": "SOC_GPIO_SUPPORT_FORCE_HOLD",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GPIO_SUPPORT_HOLD_SINGLE_IO_IN_DSLP",
+        "name": "SOC_GPIO_SUPPORT_HOLD_SINGLE_IO_IN_DSLP",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_GPIO_CLOCKOUT_BY_GPIO_MATRIX",
+        "name": "SOC_GPIO_CLOCKOUT_BY_GPIO_MATRIX",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_CLOCKOUT_HAS_SOURCE_GATE",
+        "name": "SOC_CLOCKOUT_HAS_SOURCE_GATE",
         "range": null,
         "title": null,
         "type": "bool"
@@ -868,6 +1358,86 @@
         "range": null,
         "title": null,
         "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RTCIO_PIN_COUNT",
+        "name": "SOC_RTCIO_PIN_COUNT",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RTCIO_INPUT_OUTPUT_SUPPORTED",
+        "name": "SOC_RTCIO_INPUT_OUTPUT_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RTCIO_HOLD_SUPPORTED",
+        "name": "SOC_RTCIO_HOLD_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RTCIO_WAKE_SUPPORTED",
+        "name": "SOC_RTCIO_WAKE_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RTCIO_EDGE_WAKE_SUPPORTED",
+        "name": "SOC_RTCIO_EDGE_WAKE_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_DEDIC_GPIO_OUT_CHANNELS_NUM",
+        "name": "SOC_DEDIC_GPIO_OUT_CHANNELS_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_DEDIC_GPIO_IN_CHANNELS_NUM",
+        "name": "SOC_DEDIC_GPIO_IN_CHANNELS_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_DEDIC_PERIPH_ALWAYS_ENABLE",
+        "name": "SOC_DEDIC_PERIPH_ALWAYS_ENABLE",
+        "range": null,
+        "title": null,
+        "type": "bool"
     },
     {
         "children": [],
@@ -923,8 +1493,38 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_I2C_SUPPORT_APB",
-        "name": "SOC_I2C_SUPPORT_APB",
+        "id": "SOC_I2C_SUPPORT_HW_FSM_RST",
+        "name": "SOC_I2C_SUPPORT_HW_FSM_RST",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_I2C_SUPPORT_HW_CLR_BUS",
+        "name": "SOC_I2C_SUPPORT_HW_CLR_BUS",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_I2C_SUPPORT_XTAL",
+        "name": "SOC_I2C_SUPPORT_XTAL",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_I2C_SUPPORT_RTC",
+        "name": "SOC_I2C_SUPPORT_RTC",
         "range": null,
         "title": null,
         "type": "bool"
@@ -943,11 +1543,71 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_I2C_STOP_INDEPENDENT",
-        "name": "SOC_I2C_STOP_INDEPENDENT",
+        "id": "SOC_I2C_SLAVE_SUPPORT_BROADCAST",
+        "name": "SOC_I2C_SLAVE_SUPPORT_BROADCAST",
         "range": null,
         "title": null,
         "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_I2C_SLAVE_CAN_GET_STRETCH_CAUSE",
+        "name": "SOC_I2C_SLAVE_CAN_GET_STRETCH_CAUSE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_I2C_SLAVE_SUPPORT_I2CRAM_ACCESS",
+        "name": "SOC_I2C_SLAVE_SUPPORT_I2CRAM_ACCESS",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_I2C_SLAVE_SUPPORT_SLAVE_UNMATCH",
+        "name": "SOC_I2C_SLAVE_SUPPORT_SLAVE_UNMATCH",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_I2C_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_I2C_SUPPORT_SLEEP_RETENTION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_I2C_NUM",
+        "name": "SOC_LP_I2C_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_I2C_FIFO_LEN",
+        "name": "SOC_LP_I2C_FIFO_LEN",
+        "range": null,
+        "title": null,
+        "type": "int"
     },
     {
         "children": [],
@@ -963,8 +1623,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_I2S_HW_VERSION_1",
-        "name": "SOC_I2S_HW_VERSION_1",
+        "id": "SOC_I2S_HW_VERSION_2",
+        "name": "SOC_I2S_HW_VERSION_2",
         "range": null,
         "title": null,
         "type": "bool"
@@ -973,8 +1633,18 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_I2S_SUPPORTS_APLL",
-        "name": "SOC_I2S_SUPPORTS_APLL",
+        "id": "SOC_I2S_SUPPORTS_ETM",
+        "name": "SOC_I2S_SUPPORTS_ETM",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_I2S_SUPPORTS_XTAL",
+        "name": "SOC_I2S_SUPPORTS_XTAL",
         "range": null,
         "title": null,
         "type": "bool"
@@ -985,6 +1655,16 @@
         "help": null,
         "id": "SOC_I2S_SUPPORTS_PLL_F160M",
         "name": "SOC_I2S_SUPPORTS_PLL_F160M",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_I2S_SUPPORTS_PCM",
+        "name": "SOC_I2S_SUPPORTS_PCM",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1033,16 +1713,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_I2S_SUPPORTS_PDM2PCM",
-        "name": "SOC_I2S_SUPPORTS_PDM2PCM",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "SOC_I2S_PDM_MAX_TX_LINES",
         "name": "SOC_I2S_PDM_MAX_TX_LINES",
         "range": null,
@@ -1063,8 +1733,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_I2S_SUPPORTS_ADC_DAC",
-        "name": "SOC_I2S_SUPPORTS_ADC_DAC",
+        "id": "SOC_I2S_SUPPORTS_TDM",
+        "name": "SOC_I2S_SUPPORTS_TDM",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1073,8 +1743,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_I2S_SUPPORTS_ADC",
-        "name": "SOC_I2S_SUPPORTS_ADC",
+        "id": "SOC_I2S_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_I2S_SUPPORT_SLEEP_RETENTION",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1083,8 +1753,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_I2S_SUPPORTS_DAC",
-        "name": "SOC_I2S_SUPPORTS_DAC",
+        "id": "SOC_LEDC_SUPPORT_PLL_DIV_CLOCK",
+        "name": "SOC_LEDC_SUPPORT_PLL_DIV_CLOCK",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1093,108 +1763,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_I2S_SUPPORTS_LCD_CAMERA",
-        "name": "SOC_I2S_SUPPORTS_LCD_CAMERA",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_MAX_DATA_WIDTH",
-        "name": "SOC_I2S_MAX_DATA_WIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_TRANS_SIZE_ALIGN_WORD",
-        "name": "SOC_I2S_TRANS_SIZE_ALIGN_WORD",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_I2S_LCD_I80_VARIANT",
-        "name": "SOC_I2S_LCD_I80_VARIANT",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LCD_I80_SUPPORTED",
-        "name": "SOC_LCD_I80_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LCD_I80_BUSES",
-        "name": "SOC_LCD_I80_BUSES",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LCD_I80_BUS_WIDTH",
-        "name": "SOC_LCD_I80_BUS_WIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LEDC_HAS_TIMER_SPECIFIC_MUX",
-        "name": "SOC_LEDC_HAS_TIMER_SPECIFIC_MUX",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LEDC_SUPPORT_APB_CLOCK",
-        "name": "SOC_LEDC_SUPPORT_APB_CLOCK",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LEDC_SUPPORT_REF_TICK",
-        "name": "SOC_LEDC_SUPPORT_REF_TICK",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LEDC_SUPPORT_HS_MODE",
-        "name": "SOC_LEDC_SUPPORT_HS_MODE",
+        "id": "SOC_LEDC_SUPPORT_XTAL_CLOCK",
+        "name": "SOC_LEDC_SUPPORT_XTAL_CLOCK",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1228,6 +1798,366 @@
         "range": null,
         "title": null,
         "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LEDC_SUPPORT_FADE_STOP",
+        "name": "SOC_LEDC_SUPPORT_FADE_STOP",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LEDC_GAMMA_CURVE_FADE_SUPPORTED",
+        "name": "SOC_LEDC_GAMMA_CURVE_FADE_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LEDC_GAMMA_CURVE_FADE_RANGE_MAX",
+        "name": "SOC_LEDC_GAMMA_CURVE_FADE_RANGE_MAX",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LEDC_FADE_PARAMS_BIT_WIDTH",
+        "name": "SOC_LEDC_FADE_PARAMS_BIT_WIDTH",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LEDC_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_LEDC_SUPPORT_SLEEP_RETENTION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MMU_PAGE_SIZE_CONFIGURABLE",
+        "name": "SOC_MMU_PAGE_SIZE_CONFIGURABLE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MMU_PAGE_SIZE_8KB_SUPPORTED",
+        "name": "SOC_MMU_PAGE_SIZE_8KB_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MMU_PERIPH_NUM",
+        "name": "SOC_MMU_PERIPH_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MMU_LINEAR_ADDRESS_REGION_NUM",
+        "name": "SOC_MMU_LINEAR_ADDRESS_REGION_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MMU_DI_VADDR_SHARED",
+        "name": "SOC_MMU_DI_VADDR_SHARED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MPU_CONFIGURABLE_REGIONS_SUPPORTED",
+        "name": "SOC_MPU_CONFIGURABLE_REGIONS_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MPU_MIN_REGION_SIZE",
+        "name": "SOC_MPU_MIN_REGION_SIZE",
+        "range": null,
+        "title": null,
+        "type": "hex"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MPU_REGIONS_MAX_NUM",
+        "name": "SOC_MPU_REGIONS_MAX_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MPU_REGION_RO_SUPPORTED",
+        "name": "SOC_MPU_REGION_RO_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MPU_REGION_WO_SUPPORTED",
+        "name": "SOC_MPU_REGION_WO_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PCNT_GROUPS",
+        "name": "SOC_PCNT_GROUPS",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PCNT_UNITS_PER_GROUP",
+        "name": "SOC_PCNT_UNITS_PER_GROUP",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PCNT_CHANNELS_PER_UNIT",
+        "name": "SOC_PCNT_CHANNELS_PER_UNIT",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PCNT_THRES_POINT_PER_UNIT",
+        "name": "SOC_PCNT_THRES_POINT_PER_UNIT",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PCNT_SUPPORT_RUNTIME_THRES_UPDATE",
+        "name": "SOC_PCNT_SUPPORT_RUNTIME_THRES_UPDATE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PCNT_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_PCNT_SUPPORT_SLEEP_RETENTION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_GROUPS",
+        "name": "SOC_RMT_GROUPS",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_TX_CANDIDATES_PER_GROUP",
+        "name": "SOC_RMT_TX_CANDIDATES_PER_GROUP",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_RX_CANDIDATES_PER_GROUP",
+        "name": "SOC_RMT_RX_CANDIDATES_PER_GROUP",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_CHANNELS_PER_GROUP",
+        "name": "SOC_RMT_CHANNELS_PER_GROUP",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_MEM_WORDS_PER_CHANNEL",
+        "name": "SOC_RMT_MEM_WORDS_PER_CHANNEL",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_SUPPORT_RX_PINGPONG",
+        "name": "SOC_RMT_SUPPORT_RX_PINGPONG",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_SUPPORT_RX_DEMODULATION",
+        "name": "SOC_RMT_SUPPORT_RX_DEMODULATION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_SUPPORT_ASYNC_STOP",
+        "name": "SOC_RMT_SUPPORT_ASYNC_STOP",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_SUPPORT_TX_LOOP_COUNT",
+        "name": "SOC_RMT_SUPPORT_TX_LOOP_COUNT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_SUPPORT_TX_LOOP_AUTO_STOP",
+        "name": "SOC_RMT_SUPPORT_TX_LOOP_AUTO_STOP",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_SUPPORT_TX_SYNCHRO",
+        "name": "SOC_RMT_SUPPORT_TX_SYNCHRO",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_SUPPORT_TX_CARRIER_DATA_ONLY",
+        "name": "SOC_RMT_SUPPORT_TX_CARRIER_DATA_ONLY",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_SUPPORT_XTAL",
+        "name": "SOC_RMT_SUPPORT_XTAL",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_SUPPORT_RC_FAST",
+        "name": "SOC_RMT_SUPPORT_RC_FAST",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RMT_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_RMT_SUPPORT_SLEEP_RETENTION",
+        "range": null,
+        "title": null,
+        "type": "bool"
     },
     {
         "children": [],
@@ -1333,28 +2263,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_MMU_PERIPH_NUM",
-        "name": "SOC_MMU_PERIPH_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MMU_LINEAR_ADDRESS_REGION_NUM",
-        "name": "SOC_MMU_LINEAR_ADDRESS_REGION_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPU_CONFIGURABLE_REGIONS_SUPPORTED",
-        "name": "SOC_MPU_CONFIGURABLE_REGIONS_SUPPORTED",
+        "id": "SOC_MCPWM_SWSYNC_CAN_PROPAGATE",
+        "name": "SOC_MCPWM_SWSYNC_CAN_PROPAGATE",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1363,28 +2273,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_MPU_MIN_REGION_SIZE",
-        "name": "SOC_MPU_MIN_REGION_SIZE",
-        "range": null,
-        "title": null,
-        "type": "hex"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPU_REGIONS_MAX_NUM",
-        "name": "SOC_MPU_REGIONS_MAX_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_MPU_REGION_RO_SUPPORTED",
-        "name": "SOC_MPU_REGION_RO_SUPPORTED",
+        "id": "SOC_MCPWM_SUPPORT_ETM",
+        "name": "SOC_MCPWM_SUPPORT_ETM",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1393,8 +2283,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_MPU_REGION_WO_SUPPORTED",
-        "name": "SOC_MPU_REGION_WO_SUPPORTED",
+        "id": "SOC_MCPWM_CAPTURE_CLK_FROM_GROUP",
+        "name": "SOC_MCPWM_CAPTURE_CLK_FROM_GROUP",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1403,98 +2293,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PCNT_GROUPS",
-        "name": "SOC_PCNT_GROUPS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_UNITS_PER_GROUP",
-        "name": "SOC_PCNT_UNITS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_CHANNELS_PER_UNIT",
-        "name": "SOC_PCNT_CHANNELS_PER_UNIT",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_PCNT_THRES_POINT_PER_UNIT",
-        "name": "SOC_PCNT_THRES_POINT_PER_UNIT",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_GROUPS",
-        "name": "SOC_RMT_GROUPS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_TX_CANDIDATES_PER_GROUP",
-        "name": "SOC_RMT_TX_CANDIDATES_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_RX_CANDIDATES_PER_GROUP",
-        "name": "SOC_RMT_RX_CANDIDATES_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_CHANNELS_PER_GROUP",
-        "name": "SOC_RMT_CHANNELS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_MEM_WORDS_PER_CHANNEL",
-        "name": "SOC_RMT_MEM_WORDS_PER_CHANNEL",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RMT_SUPPORT_REF_TICK",
-        "name": "SOC_RMT_SUPPORT_REF_TICK",
+        "id": "SOC_MCPWM_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_MCPWM_SUPPORT_SLEEP_RETENTION",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1503,8 +2303,58 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_RMT_SUPPORT_APB",
-        "name": "SOC_RMT_SUPPORT_APB",
+        "id": "SOC_PARLIO_GROUPS",
+        "name": "SOC_PARLIO_GROUPS",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PARLIO_TX_UNITS_PER_GROUP",
+        "name": "SOC_PARLIO_TX_UNITS_PER_GROUP",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PARLIO_RX_UNITS_PER_GROUP",
+        "name": "SOC_PARLIO_RX_UNITS_PER_GROUP",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PARLIO_TX_UNIT_MAX_DATA_WIDTH",
+        "name": "SOC_PARLIO_TX_UNIT_MAX_DATA_WIDTH",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PARLIO_RX_UNIT_MAX_DATA_WIDTH",
+        "name": "SOC_PARLIO_RX_UNIT_MAX_DATA_WIDTH",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PARLIO_TX_RX_SHARE_INTERRUPT",
+        "name": "SOC_PARLIO_TX_RX_SHARE_INTERRUPT",
         "range": null,
         "title": null,
         "type": "bool"
@@ -1513,498 +2363,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_RMT_CHANNEL_CLK_INDEPENDENT",
-        "name": "SOC_RMT_CHANNEL_CLK_INDEPENDENT",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_PIN_COUNT",
-        "name": "SOC_RTCIO_PIN_COUNT",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_INPUT_OUTPUT_SUPPORTED",
-        "name": "SOC_RTCIO_INPUT_OUTPUT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_HOLD_SUPPORTED",
-        "name": "SOC_RTCIO_HOLD_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTCIO_WAKE_SUPPORTED",
-        "name": "SOC_RTCIO_WAKE_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_RTC_CNTL_NEEDS_ATOMIC_ACCESS",
-        "name": "SOC_RTC_CNTL_NEEDS_ATOMIC_ACCESS",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SDM_GROUPS",
-        "name": "SOC_SDM_GROUPS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SDM_CHANNELS_PER_GROUP",
-        "name": "SOC_SDM_CHANNELS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SDM_CLK_SUPPORT_APB",
-        "name": "SOC_SDM_CLK_SUPPORT_APB",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_HD_BOTH_INOUT_SUPPORTED",
-        "name": "SOC_SPI_HD_BOTH_INOUT_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_AS_CS_SUPPORTED",
-        "name": "SOC_SPI_AS_CS_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_PERIPH_NUM",
-        "name": "SOC_SPI_PERIPH_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_DMA_CHAN_NUM",
-        "name": "SOC_SPI_DMA_CHAN_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_MAX_CS_NUM",
-        "name": "SOC_SPI_MAX_CS_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_SUPPORT_CLK_APB",
-        "name": "SOC_SPI_SUPPORT_CLK_APB",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_MAXIMUM_BUFFER_SIZE",
-        "name": "SOC_SPI_MAXIMUM_BUFFER_SIZE",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_MAX_PRE_DIVIDER",
-        "name": "SOC_SPI_MAX_PRE_DIVIDER",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TIMER_GROUPS",
-        "name": "SOC_TIMER_GROUPS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TIMER_GROUP_TIMERS_PER_GROUP",
-        "name": "SOC_TIMER_GROUP_TIMERS_PER_GROUP",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TIMER_GROUP_COUNTER_BIT_WIDTH",
-        "name": "SOC_TIMER_GROUP_COUNTER_BIT_WIDTH",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TIMER_GROUP_TOTAL_TIMERS",
-        "name": "SOC_TIMER_GROUP_TOTAL_TIMERS",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TIMER_GROUP_SUPPORT_APB",
-        "name": "SOC_TIMER_GROUP_SUPPORT_APB",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_TIMER_BIT_WIDTH_LO",
-        "name": "SOC_LP_TIMER_BIT_WIDTH_LO",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_LP_TIMER_BIT_WIDTH_HI",
-        "name": "SOC_LP_TIMER_BIT_WIDTH_HI",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TOUCH_SENSOR_VERSION",
-        "name": "SOC_TOUCH_SENSOR_VERSION",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TOUCH_SENSOR_NUM",
-        "name": "SOC_TOUCH_SENSOR_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TOUCH_MIN_CHAN_ID",
-        "name": "SOC_TOUCH_MIN_CHAN_ID",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TOUCH_MAX_CHAN_ID",
-        "name": "SOC_TOUCH_MAX_CHAN_ID",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TOUCH_SUPPORT_SLEEP_WAKEUP",
-        "name": "SOC_TOUCH_SUPPORT_SLEEP_WAKEUP",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TOUCH_SAMPLE_CFG_NUM",
-        "name": "SOC_TOUCH_SAMPLE_CFG_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TWAI_CONTROLLER_NUM",
-        "name": "SOC_TWAI_CONTROLLER_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TWAI_MASK_FILTER_NUM",
-        "name": "SOC_TWAI_MASK_FILTER_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TWAI_BRP_MIN",
-        "name": "SOC_TWAI_BRP_MIN",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TWAI_CLK_SUPPORT_APB",
-        "name": "SOC_TWAI_CLK_SUPPORT_APB",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_TWAI_SUPPORT_MULTI_ADDRESS_LAYOUT",
-        "name": "SOC_TWAI_SUPPORT_MULTI_ADDRESS_LAYOUT",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_UART_NUM",
-        "name": "SOC_UART_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_UART_HP_NUM",
-        "name": "SOC_UART_HP_NUM",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_UART_SUPPORT_APB_CLK",
-        "name": "SOC_UART_SUPPORT_APB_CLK",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_UART_SUPPORT_REF_TICK",
-        "name": "SOC_UART_SUPPORT_REF_TICK",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_UART_FIFO_LEN",
-        "name": "SOC_UART_FIFO_LEN",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_UART_BITRATE_MAX",
-        "name": "SOC_UART_BITRATE_MAX",
-        "range": null,
-        "title": null,
-        "type": "int"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_UART_WAKEUP_SUPPORT_ACTIVE_THRESH_MODE",
-        "name": "SOC_UART_WAKEUP_SUPPORT_ACTIVE_THRESH_MODE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPIRAM_SUPPORTED",
-        "name": "SOC_SPIRAM_SUPPORTED",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SPI_MEM_SUPPORT_CONFIG_GPIO_BY_EFUSE",
-        "name": "SOC_SPI_MEM_SUPPORT_CONFIG_GPIO_BY_EFUSE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_SUPPORT_PARALLEL_ENG",
-        "name": "SOC_SHA_SUPPORT_PARALLEL_ENG",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_ENDIANNESS_BE",
-        "name": "SOC_SHA_ENDIANNESS_BE",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_SUPPORT_SHA1",
-        "name": "SOC_SHA_SUPPORT_SHA1",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_SUPPORT_SHA256",
-        "name": "SOC_SHA_SUPPORT_SHA256",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_SUPPORT_SHA384",
-        "name": "SOC_SHA_SUPPORT_SHA384",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
-        "id": "SOC_SHA_SUPPORT_SHA512",
-        "name": "SOC_SHA_SUPPORT_SHA512",
+        "id": "SOC_PARLIO_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_PARLIO_SUPPORT_SLEEP_RETENTION",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2043,8 +2403,18 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_AES_SUPPORT_AES_128",
-        "name": "SOC_AES_SUPPORT_AES_128",
+        "id": "SOC_SHA_DMA_MAX_BUFFER_SIZE",
+        "name": "SOC_SHA_DMA_MAX_BUFFER_SIZE",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SHA_SUPPORT_DMA",
+        "name": "SOC_SHA_SUPPORT_DMA",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2053,8 +2423,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_AES_SUPPORT_AES_192",
-        "name": "SOC_AES_SUPPORT_AES_192",
+        "id": "SOC_SHA_SUPPORT_RESUME",
+        "name": "SOC_SHA_SUPPORT_RESUME",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2063,8 +2433,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_AES_SUPPORT_AES_256",
-        "name": "SOC_AES_SUPPORT_AES_256",
+        "id": "SOC_SHA_GDMA",
+        "name": "SOC_SHA_GDMA",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2073,8 +2443,688 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_SECURE_BOOT_V1",
-        "name": "SOC_SECURE_BOOT_V1",
+        "id": "SOC_SHA_SUPPORT_SHA1",
+        "name": "SOC_SHA_SUPPORT_SHA1",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SHA_SUPPORT_SHA224",
+        "name": "SOC_SHA_SUPPORT_SHA224",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SHA_SUPPORT_SHA256",
+        "name": "SOC_SHA_SUPPORT_SHA256",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SDM_GROUPS",
+        "name": "SOC_SDM_GROUPS",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SDM_CHANNELS_PER_GROUP",
+        "name": "SOC_SDM_CHANNELS_PER_GROUP",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SDM_CLK_SUPPORT_PLL_F80M",
+        "name": "SOC_SDM_CLK_SUPPORT_PLL_F80M",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SDM_CLK_SUPPORT_XTAL",
+        "name": "SOC_SDM_CLK_SUPPORT_XTAL",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_PERIPH_NUM",
+        "name": "SOC_SPI_PERIPH_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_MAX_CS_NUM",
+        "name": "SOC_SPI_MAX_CS_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_MAXIMUM_BUFFER_SIZE",
+        "name": "SOC_SPI_MAXIMUM_BUFFER_SIZE",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SUPPORT_DDRCLK",
+        "name": "SOC_SPI_SUPPORT_DDRCLK",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SLAVE_SUPPORT_SEG_TRANS",
+        "name": "SOC_SPI_SLAVE_SUPPORT_SEG_TRANS",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SUPPORT_CD_SIG",
+        "name": "SOC_SPI_SUPPORT_CD_SIG",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SUPPORT_CONTINUOUS_TRANS",
+        "name": "SOC_SPI_SUPPORT_CONTINUOUS_TRANS",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SUPPORT_SLAVE_HD_VER2",
+        "name": "SOC_SPI_SUPPORT_SLAVE_HD_VER2",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_SPI_SUPPORT_SLEEP_RETENTION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SUPPORT_CLK_XTAL",
+        "name": "SOC_SPI_SUPPORT_CLK_XTAL",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SUPPORT_CLK_PLL_F80M",
+        "name": "SOC_SPI_SUPPORT_CLK_PLL_F80M",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SUPPORT_CLK_RC_FAST",
+        "name": "SOC_SPI_SUPPORT_CLK_RC_FAST",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SCT_SUPPORTED",
+        "name": "SOC_SPI_SCT_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SCT_REG_NUM",
+        "name": "SOC_SPI_SCT_REG_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SCT_BUFFER_NUM_MAX",
+        "name": "SOC_SPI_SCT_BUFFER_NUM_MAX",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_SCT_CONF_BITLEN_MAX",
+        "name": "SOC_SPI_SCT_CONF_BITLEN_MAX",
+        "range": null,
+        "title": null,
+        "type": "hex"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MEMSPI_IS_INDEPENDENT",
+        "name": "SOC_MEMSPI_IS_INDEPENDENT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_MAX_PRE_DIVIDER",
+        "name": "SOC_SPI_MAX_PRE_DIVIDER",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_MEM_SUPPORT_AUTO_WAIT_IDLE",
+        "name": "SOC_SPI_MEM_SUPPORT_AUTO_WAIT_IDLE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_MEM_SUPPORT_AUTO_SUSPEND",
+        "name": "SOC_SPI_MEM_SUPPORT_AUTO_SUSPEND",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_MEM_SUPPORT_AUTO_RESUME",
+        "name": "SOC_SPI_MEM_SUPPORT_AUTO_RESUME",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_MEM_SUPPORT_IDLE_INTR",
+        "name": "SOC_SPI_MEM_SUPPORT_IDLE_INTR",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_MEM_SUPPORT_SW_SUSPEND",
+        "name": "SOC_SPI_MEM_SUPPORT_SW_SUSPEND",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_MEM_SUPPORT_CHECK_SUS",
+        "name": "SOC_SPI_MEM_SUPPORT_CHECK_SUS",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SPI_MEM_SUPPORT_WRAP",
+        "name": "SOC_SPI_MEM_SUPPORT_WRAP",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SYSTIMER_COUNTER_NUM",
+        "name": "SOC_SYSTIMER_COUNTER_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SYSTIMER_ALARM_NUM",
+        "name": "SOC_SYSTIMER_ALARM_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SYSTIMER_BIT_WIDTH_LO",
+        "name": "SOC_SYSTIMER_BIT_WIDTH_LO",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SYSTIMER_BIT_WIDTH_HI",
+        "name": "SOC_SYSTIMER_BIT_WIDTH_HI",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SYSTIMER_FIXED_DIVIDER",
+        "name": "SOC_SYSTIMER_FIXED_DIVIDER",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SYSTIMER_SUPPORT_RC_FAST",
+        "name": "SOC_SYSTIMER_SUPPORT_RC_FAST",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SYSTIMER_INT_LEVEL",
+        "name": "SOC_SYSTIMER_INT_LEVEL",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SYSTIMER_ALARM_MISS_COMPENSATE",
+        "name": "SOC_SYSTIMER_ALARM_MISS_COMPENSATE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SYSTIMER_SUPPORT_ETM",
+        "name": "SOC_SYSTIMER_SUPPORT_ETM",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_TIMER_BIT_WIDTH_LO",
+        "name": "SOC_LP_TIMER_BIT_WIDTH_LO",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_TIMER_BIT_WIDTH_HI",
+        "name": "SOC_LP_TIMER_BIT_WIDTH_HI",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TIMER_GROUPS",
+        "name": "SOC_TIMER_GROUPS",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TIMER_GROUP_TIMERS_PER_GROUP",
+        "name": "SOC_TIMER_GROUP_TIMERS_PER_GROUP",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TIMER_GROUP_COUNTER_BIT_WIDTH",
+        "name": "SOC_TIMER_GROUP_COUNTER_BIT_WIDTH",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TIMER_GROUP_SUPPORT_XTAL",
+        "name": "SOC_TIMER_GROUP_SUPPORT_XTAL",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TIMER_GROUP_SUPPORT_RC_FAST",
+        "name": "SOC_TIMER_GROUP_SUPPORT_RC_FAST",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TIMER_GROUP_TOTAL_TIMERS",
+        "name": "SOC_TIMER_GROUP_TOTAL_TIMERS",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TIMER_SUPPORT_ETM",
+        "name": "SOC_TIMER_SUPPORT_ETM",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TIMER_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_TIMER_SUPPORT_SLEEP_RETENTION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MWDT_SUPPORT_XTAL",
+        "name": "SOC_MWDT_SUPPORT_XTAL",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MWDT_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_MWDT_SUPPORT_SLEEP_RETENTION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TWAI_CONTROLLER_NUM",
+        "name": "SOC_TWAI_CONTROLLER_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TWAI_MASK_FILTER_NUM",
+        "name": "SOC_TWAI_MASK_FILTER_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TWAI_CLK_SUPPORT_XTAL",
+        "name": "SOC_TWAI_CLK_SUPPORT_XTAL",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TWAI_BRP_MIN",
+        "name": "SOC_TWAI_BRP_MIN",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TWAI_BRP_MAX",
+        "name": "SOC_TWAI_BRP_MAX",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TWAI_SUPPORTS_RX_STATUS",
+        "name": "SOC_TWAI_SUPPORTS_RX_STATUS",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TWAI_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_TWAI_SUPPORT_SLEEP_RETENTION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EFUSE_DIS_DOWNLOAD_ICACHE",
+        "name": "SOC_EFUSE_DIS_DOWNLOAD_ICACHE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EFUSE_DIS_PAD_JTAG",
+        "name": "SOC_EFUSE_DIS_PAD_JTAG",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EFUSE_DIS_USB_JTAG",
+        "name": "SOC_EFUSE_DIS_USB_JTAG",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EFUSE_DIS_DIRECT_BOOT",
+        "name": "SOC_EFUSE_DIS_DIRECT_BOOT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EFUSE_SOFT_DIS_JTAG",
+        "name": "SOC_EFUSE_SOFT_DIS_JTAG",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EFUSE_DIS_ICACHE",
+        "name": "SOC_EFUSE_DIS_ICACHE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EFUSE_BLOCK9_KEY_PURPOSE_QUIRK",
+        "name": "SOC_EFUSE_BLOCK9_KEY_PURPOSE_QUIRK",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SECURE_BOOT_V2_RSA",
+        "name": "SOC_SECURE_BOOT_V2_RSA",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SECURE_BOOT_V2_ECC",
+        "name": "SOC_SECURE_BOOT_V2_ECC",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2093,11 +3143,311 @@
         "children": [],
         "depends_on": null,
         "help": null,
+        "id": "SOC_EFUSE_REVOKE_BOOT_KEY_DIGESTS",
+        "name": "SOC_EFUSE_REVOKE_BOOT_KEY_DIGESTS",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_SUPPORT_SECURE_BOOT_REVOKE_KEY",
+        "name": "SOC_SUPPORT_SECURE_BOOT_REVOKE_KEY",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
         "id": "SOC_FLASH_ENCRYPTED_XTS_AES_BLOCK_MAX",
         "name": "SOC_FLASH_ENCRYPTED_XTS_AES_BLOCK_MAX",
         "range": null,
         "title": null,
         "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_FLASH_ENCRYPTION_XTS_AES",
+        "name": "SOC_FLASH_ENCRYPTION_XTS_AES",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_FLASH_ENCRYPTION_XTS_AES_128",
+        "name": "SOC_FLASH_ENCRYPTION_XTS_AES_128",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_APM_CTRL_FILTER_SUPPORTED",
+        "name": "SOC_APM_CTRL_FILTER_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_APM_LP_APM0_SUPPORTED",
+        "name": "SOC_APM_LP_APM0_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_APM_SUPPORT_LP_TEE_CTRL",
+        "name": "SOC_APM_SUPPORT_LP_TEE_CTRL",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_CRYPTO_DPA_PROTECTION_SUPPORTED",
+        "name": "SOC_CRYPTO_DPA_PROTECTION_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_NUM",
+        "name": "SOC_UART_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_HP_NUM",
+        "name": "SOC_UART_HP_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_LP_NUM",
+        "name": "SOC_UART_LP_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_FIFO_LEN",
+        "name": "SOC_UART_FIFO_LEN",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_UART_FIFO_LEN",
+        "name": "SOC_LP_UART_FIFO_LEN",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_BITRATE_MAX",
+        "name": "SOC_UART_BITRATE_MAX",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_SUPPORT_PLL_F80M_CLK",
+        "name": "SOC_UART_SUPPORT_PLL_F80M_CLK",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_SUPPORT_RTC_CLK",
+        "name": "SOC_UART_SUPPORT_RTC_CLK",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_SUPPORT_XTAL_CLK",
+        "name": "SOC_UART_SUPPORT_XTAL_CLK",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_SUPPORT_WAKEUP_INT",
+        "name": "SOC_UART_SUPPORT_WAKEUP_INT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_HAS_LP_UART",
+        "name": "SOC_UART_HAS_LP_UART",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_UART_SUPPORT_SLEEP_RETENTION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_SUPPORT_FSM_TX_WAIT_SEND",
+        "name": "SOC_UART_SUPPORT_FSM_TX_WAIT_SEND",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_WAKEUP_CHARS_SEQ_MAX_LEN",
+        "name": "SOC_UART_WAKEUP_CHARS_SEQ_MAX_LEN",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_WAKEUP_SUPPORT_ACTIVE_THRESH_MODE",
+        "name": "SOC_UART_WAKEUP_SUPPORT_ACTIVE_THRESH_MODE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_WAKEUP_SUPPORT_FIFO_THRESH_MODE",
+        "name": "SOC_UART_WAKEUP_SUPPORT_FIFO_THRESH_MODE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_WAKEUP_SUPPORT_START_BIT_MODE",
+        "name": "SOC_UART_WAKEUP_SUPPORT_START_BIT_MODE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UART_WAKEUP_SUPPORT_CHAR_SEQ_MODE",
+        "name": "SOC_UART_WAKEUP_SUPPORT_CHAR_SEQ_MODE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_UHCI_NUM",
+        "name": "SOC_UHCI_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_COEX_HW_PTI",
+        "name": "SOC_COEX_HW_PTI",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EXTERNAL_COEX_ADVANCE",
+        "name": "SOC_EXTERNAL_COEX_ADVANCE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EXTERNAL_COEX_LEADER_TX_LINE",
+        "name": "SOC_EXTERNAL_COEX_LEADER_TX_LINE",
+        "range": null,
+        "title": null,
+        "type": "bool"
     },
     {
         "children": [],
@@ -2113,8 +3463,48 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_EXT0_WAKEUP",
-        "name": "SOC_PM_SUPPORT_EXT0_WAKEUP",
+        "id": "SOC_WIFI_LIGHT_SLEEP_CLK_WIDTH",
+        "name": "SOC_WIFI_LIGHT_SLEEP_CLK_WIDTH",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RTC_MEM_SUPPORT_SPEED_MODE_SWITCH",
+        "name": "SOC_RTC_MEM_SUPPORT_SPEED_MODE_SWITCH",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_SUPPORT_WIFI_WAKEUP",
+        "name": "SOC_PM_SUPPORT_WIFI_WAKEUP",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_SUPPORT_BEACON_WAKEUP",
+        "name": "SOC_PM_SUPPORT_BEACON_WAKEUP",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_SUPPORT_BT_WAKEUP",
+        "name": "SOC_PM_SUPPORT_BT_WAKEUP",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2133,8 +3523,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_EXT_WAKEUP",
-        "name": "SOC_PM_SUPPORT_EXT_WAKEUP",
+        "id": "SOC_PM_SUPPORT_EXT1_WAKEUP_MODE_PER_PIN",
+        "name": "SOC_PM_SUPPORT_EXT1_WAKEUP_MODE_PER_PIN",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2143,8 +3533,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_TOUCH_SENSOR_WAKEUP",
-        "name": "SOC_PM_SUPPORT_TOUCH_SENSOR_WAKEUP",
+        "id": "SOC_PM_SUPPORT_CPU_PD",
+        "name": "SOC_PM_SUPPORT_CPU_PD",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2153,8 +3543,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_RTC_PERIPH_PD",
-        "name": "SOC_PM_SUPPORT_RTC_PERIPH_PD",
+        "id": "SOC_PM_SUPPORT_MODEM_PD",
+        "name": "SOC_PM_SUPPORT_MODEM_PD",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2163,8 +3553,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_RTC_FAST_MEM_PD",
-        "name": "SOC_PM_SUPPORT_RTC_FAST_MEM_PD",
+        "id": "SOC_PM_SUPPORT_XTAL32K_PD",
+        "name": "SOC_PM_SUPPORT_XTAL32K_PD",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2173,8 +3563,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_RTC_SLOW_MEM_PD",
-        "name": "SOC_PM_SUPPORT_RTC_SLOW_MEM_PD",
+        "id": "SOC_PM_SUPPORT_RC32K_PD",
+        "name": "SOC_PM_SUPPORT_RC32K_PD",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2203,8 +3593,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_SUPPORT_MODEM_PD",
-        "name": "SOC_PM_SUPPORT_MODEM_PD",
+        "id": "SOC_PM_SUPPORT_TOP_PD",
+        "name": "SOC_PM_SUPPORT_TOP_PD",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2213,8 +3603,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_CONFIGURABLE_VDDSDIO_SUPPORTED",
-        "name": "SOC_CONFIGURABLE_VDDSDIO_SUPPORTED",
+        "id": "SOC_PM_SUPPORT_HP_AON_PD",
+        "name": "SOC_PM_SUPPORT_HP_AON_PD",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2223,8 +3613,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_PM_MODEM_PD_BY_SW",
-        "name": "SOC_PM_MODEM_PD_BY_SW",
+        "id": "SOC_PM_SUPPORT_MAC_BB_PD",
+        "name": "SOC_PM_SUPPORT_MAC_BB_PD",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2233,8 +3623,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_CLK_APLL_SUPPORTED",
-        "name": "SOC_CLK_APLL_SUPPORTED",
+        "id": "SOC_PM_SUPPORT_RTC_PERIPH_PD",
+        "name": "SOC_PM_SUPPORT_RTC_PERIPH_PD",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2243,8 +3633,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_CLK_RC_FAST_D256_SUPPORTED",
-        "name": "SOC_CLK_RC_FAST_D256_SUPPORTED",
+        "id": "SOC_PM_SUPPORT_PMU_MODEM_STATE",
+        "name": "SOC_PM_SUPPORT_PMU_MODEM_STATE",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2253,11 +3643,131 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_RTC_SLOW_CLK_SUPPORT_RC_FAST_D256",
-        "name": "SOC_RTC_SLOW_CLK_SUPPORT_RC_FAST_D256",
+        "id": "SOC_PM_SUPPORT_PMU_CLK_ICG",
+        "name": "SOC_PM_SUPPORT_PMU_CLK_ICG",
         "range": null,
         "title": null,
         "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY",
+        "name": "SOC_PM_SUPPORT_DEEPSLEEP_CHECK_STUB_ONLY",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_CPU_RETENTION_BY_SW",
+        "name": "SOC_PM_CPU_RETENTION_BY_SW",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_MODEM_RETENTION_BY_REGDMA",
+        "name": "SOC_PM_MODEM_RETENTION_BY_REGDMA",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_RETENTION_HAS_CLOCK_BUG",
+        "name": "SOC_PM_RETENTION_HAS_CLOCK_BUG",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_EXT_MEM_CACHE_TAG_IN_CPU_DOMAIN",
+        "name": "SOC_EXT_MEM_CACHE_TAG_IN_CPU_DOMAIN",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_MODEM_RF_FLAG_UPDATE_WORKAROUND",
+        "name": "SOC_PM_MODEM_RF_FLAG_UPDATE_WORKAROUND",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_PAU_LINK_NUM",
+        "name": "SOC_PM_PAU_LINK_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_PAU_REGDMA_LINK_MULTI_ADDR",
+        "name": "SOC_PM_PAU_REGDMA_LINK_MULTI_ADDR",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_PAU_REGDMA_LINK_WIFIMAC",
+        "name": "SOC_PM_PAU_REGDMA_LINK_WIFIMAC",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_PAU_REGDMA_UPDATE_CACHE_BEFORE_WAIT_COMPARE",
+        "name": "SOC_PM_PAU_REGDMA_UPDATE_CACHE_BEFORE_WAIT_COMPARE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_PMU_MIN_SLP_SLOW_CLK_CYCLE_FIXED",
+        "name": "SOC_PM_PMU_MIN_SLP_SLOW_CLK_CYCLE_FIXED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_PM_RETENTION_MODULE_NUM",
+        "name": "SOC_PM_RETENTION_MODULE_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
     },
     {
         "children": [],
@@ -2265,6 +3775,16 @@
         "help": null,
         "id": "SOC_CLK_RC_FAST_SUPPORT_CALIBRATION",
         "name": "SOC_CLK_RC_FAST_SUPPORT_CALIBRATION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_MODEM_CLOCK_IS_INDEPENDENT",
+        "name": "SOC_MODEM_CLOCK_IS_INDEPENDENT",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2283,8 +3803,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_CLK_LP_FAST_SUPPORT_XTAL_D4",
-        "name": "SOC_CLK_LP_FAST_SUPPORT_XTAL_D4",
+        "id": "SOC_CLK_OSC_SLOW_SUPPORTED",
+        "name": "SOC_CLK_OSC_SLOW_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2293,8 +3813,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_SDMMC_USE_IOMUX",
-        "name": "SOC_SDMMC_USE_IOMUX",
+        "id": "SOC_CLK_RC32K_SUPPORTED",
+        "name": "SOC_CLK_RC32K_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2303,11 +3823,131 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_SDMMC_NUM_SLOTS",
-        "name": "SOC_SDMMC_NUM_SLOTS",
+        "id": "SOC_CLK_LP_FAST_SUPPORT_XTAL_D2",
+        "name": "SOC_CLK_LP_FAST_SUPPORT_XTAL_D2",
         "range": null,
         "title": null,
-        "type": "int"
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RCC_IS_INDEPENDENT",
+        "name": "SOC_RCC_IS_INDEPENDENT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_CLK_ANA_I2C_MST_HAS_ROOT_GATE",
+        "name": "SOC_CLK_ANA_I2C_MST_HAS_ROOT_GATE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TEMPERATURE_SENSOR_SUPPORT_FAST_RC",
+        "name": "SOC_TEMPERATURE_SENSOR_SUPPORT_FAST_RC",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TEMPERATURE_SENSOR_SUPPORT_XTAL",
+        "name": "SOC_TEMPERATURE_SENSOR_SUPPORT_XTAL",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TEMPERATURE_SENSOR_INTR_SUPPORT",
+        "name": "SOC_TEMPERATURE_SENSOR_INTR_SUPPORT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TEMPERATURE_SENSOR_SUPPORT_ETM",
+        "name": "SOC_TEMPERATURE_SENSOR_SUPPORT_ETM",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TEMPERATURE_SENSOR_SUPPORT_SLEEP_RETENTION",
+        "name": "SOC_TEMPERATURE_SENSOR_SUPPORT_SLEEP_RETENTION",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_TEMPERATURE_SENSOR_UNDER_PD_TOP_DOMAIN",
+        "name": "SOC_TEMPERATURE_SENSOR_UNDER_PD_TOP_DOMAIN",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_RNG_CLOCK_IS_INDEPENDENT",
+        "name": "SOC_RNG_CLOCK_IS_INDEPENDENT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_WIFI_HW_TSF",
+        "name": "SOC_WIFI_HW_TSF",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_WIFI_FTM_SUPPORT",
+        "name": "SOC_WIFI_FTM_SUPPORT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_WIFI_GCMP_SUPPORT",
+        "name": "SOC_WIFI_GCMP_SUPPORT",
+        "range": null,
+        "title": null,
+        "type": "bool"
     },
     {
         "children": [],
@@ -2315,6 +3955,16 @@
         "help": null,
         "id": "SOC_WIFI_WAPI_SUPPORT",
         "name": "SOC_WIFI_WAPI_SUPPORT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_WIFI_TXOP_SUPPORT",
+        "name": "SOC_WIFI_TXOP_SUPPORT",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2343,8 +3993,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_WIFI_SUPPORT_VARIABLE_BEACON_WINDOW",
-        "name": "SOC_WIFI_SUPPORT_VARIABLE_BEACON_WINDOW",
+        "id": "SOC_WIFI_HE_SUPPORT",
+        "name": "SOC_WIFI_HE_SUPPORT",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2353,11 +4003,11 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_WIFI_NAN_SUPPORT",
-        "name": "SOC_WIFI_NAN_SUPPORT",
+        "id": "SOC_WIFI_MAC_VERSION_NUM",
+        "name": "SOC_WIFI_MAC_VERSION_NUM",
         "range": null,
         "title": null,
-        "type": "bool"
+        "type": "int"
     },
     {
         "children": [],
@@ -2383,8 +4033,18 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_BT_CLASSIC_SUPPORTED",
-        "name": "SOC_BT_CLASSIC_SUPPORTED",
+        "id": "SOC_ESP_NIMBLE_CONTROLLER",
+        "name": "SOC_ESP_NIMBLE_CONTROLLER",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_BLE_50_SUPPORTED",
+        "name": "SOC_BLE_50_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2403,8 +4063,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_BLUFI_SUPPORTED",
-        "name": "SOC_BLUFI_SUPPORTED",
+        "id": "SOC_BLE_POWER_CONTROL_SUPPORTED",
+        "name": "SOC_BLE_POWER_CONTROL_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2413,8 +4073,18 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_BT_H2C_ENC_KEY_CTRL_ENH_VSC_SUPPORTED",
-        "name": "SOC_BT_H2C_ENC_KEY_CTRL_ENH_VSC_SUPPORTED",
+        "id": "SOC_BLE_PERIODIC_ADV_ENH_SUPPORTED",
+        "name": "SOC_BLE_PERIODIC_ADV_ENH_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_BLUFI_SUPPORTED",
+        "name": "SOC_BLUFI_SUPPORTED",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2433,8 +4103,28 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_ULP_HAS_ADC",
-        "name": "SOC_ULP_HAS_ADC",
+        "id": "SOC_BLE_SUBRATE_SUPPORTED",
+        "name": "SOC_BLE_SUBRATE_SUPPORTED",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_BLE_PERIODIC_ADV_WITH_RESPONSE",
+        "name": "SOC_BLE_PERIODIC_ADV_WITH_RESPONSE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_BLE_USE_WIFI_PWR_CLK_WORKAROUND",
+        "name": "SOC_BLE_USE_WIFI_PWR_CLK_WORKAROUND",
         "range": null,
         "title": null,
         "type": "bool"
@@ -2453,8 +4143,38 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "SOC_EMAC_RMII_CLK_OUT_INTERNAL_LOOPBACK",
-        "name": "SOC_EMAC_RMII_CLK_OUT_INTERNAL_LOOPBACK",
+        "id": "SOC_CAPS_NO_RESET_BY_ANA_BOD",
+        "name": "SOC_CAPS_NO_RESET_BY_ANA_BOD",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR",
+        "name": "SOC_LP_CORE_SINGLE_INTERRUPT_VECTOR",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_LP_CORE_SUPPORT_ETM",
+        "name": "SOC_LP_CORE_SUPPORT_ETM",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "SOC_DEBUG_HAVE_OCD_STUB_BINS",
+        "name": "SOC_DEBUG_HAVE_OCD_STUB_BINS",
         "range": null,
         "title": null,
         "type": "bool"
@@ -4521,16 +6241,6 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "ESP_ROM_HAS_MZ_CRC32",
-        "name": "ESP_ROM_HAS_MZ_CRC32",
-        "range": null,
-        "title": null,
-        "type": "bool"
-    },
-    {
-        "children": [],
-        "depends_on": null,
-        "help": null,
         "id": "ESP_ROM_HAS_JPEG_DECODE",
         "name": "ESP_ROM_HAS_JPEG_DECODE",
         "range": null,
@@ -4541,8 +6251,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "ESP_ROM_HAS_UART_BUF_SWITCH",
-        "name": "ESP_ROM_HAS_UART_BUF_SWITCH",
+        "id": "ESP_ROM_UART_CLK_IS_XTAL",
+        "name": "ESP_ROM_UART_CLK_IS_XTAL",
         "range": null,
         "title": null,
         "type": "bool"
@@ -4551,8 +6261,138 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "ESP_ROM_NEEDS_SWSETUP_WORKAROUND",
-        "name": "ESP_ROM_NEEDS_SWSETUP_WORKAROUND",
+        "id": "ESP_ROM_USB_SERIAL_DEVICE_NUM",
+        "name": "ESP_ROM_USB_SERIAL_DEVICE_NUM",
+        "range": null,
+        "title": null,
+        "type": "int"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_HAS_RETARGETABLE_LOCKING",
+        "name": "ESP_ROM_HAS_RETARGETABLE_LOCKING",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_GET_CLK_FREQ",
+        "name": "ESP_ROM_GET_CLK_FREQ",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_HAS_RVFPLIB",
+        "name": "ESP_ROM_HAS_RVFPLIB",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_HAS_HAL_WDT",
+        "name": "ESP_ROM_HAS_HAL_WDT",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_HAS_HAL_SYSTIMER",
+        "name": "ESP_ROM_HAS_HAL_SYSTIMER",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_SYSTIMER_INIT_PATCH",
+        "name": "ESP_ROM_SYSTIMER_INIT_PATCH",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_HAS_HEAP_TLSF",
+        "name": "ESP_ROM_HAS_HEAP_TLSF",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_TLSF_CHECK_PATCH",
+        "name": "ESP_ROM_TLSF_CHECK_PATCH",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_MULTI_HEAP_WALK_PATCH",
+        "name": "ESP_ROM_MULTI_HEAP_WALK_PATCH",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_HAS_LAYOUT_TABLE",
+        "name": "ESP_ROM_HAS_LAYOUT_TABLE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_HAS_SPI_FLASH",
+        "name": "ESP_ROM_HAS_SPI_FLASH",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_HAS_SPI_FLASH_MMAP",
+        "name": "ESP_ROM_HAS_SPI_FLASH_MMAP",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_HAS_REGI2C_BUG",
+        "name": "ESP_ROM_HAS_REGI2C_BUG",
         "range": null,
         "title": null,
         "type": "bool"
@@ -4571,8 +6411,8 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "ESP_ROM_HAS_NEWLIB_NANO_FORMAT",
-        "name": "ESP_ROM_HAS_NEWLIB_NANO_FORMAT",
+        "id": "ESP_ROM_HAS_NEWLIB_NORMAL_FORMAT",
+        "name": "ESP_ROM_HAS_NEWLIB_NORMAL_FORMAT",
         "range": null,
         "title": null,
         "type": "bool"
@@ -4581,8 +6421,38 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "ESP_ROM_HAS_NEWLIB_32BIT_TIME",
-        "name": "ESP_ROM_HAS_NEWLIB_32BIT_TIME",
+        "id": "ESP_ROM_REV0_HAS_NO_ECDSA_INTERFACE",
+        "name": "ESP_ROM_REV0_HAS_NO_ECDSA_INTERFACE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_WDT_INIT_PATCH",
+        "name": "ESP_ROM_WDT_INIT_PATCH",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_NEEDS_SET_CACHE_MMU_SIZE",
+        "name": "ESP_ROM_NEEDS_SET_CACHE_MMU_SIZE",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_RAM_APP_NEEDS_MMU_INIT",
+        "name": "ESP_ROM_RAM_APP_NEEDS_MMU_INIT",
         "range": null,
         "title": null,
         "type": "bool"
@@ -4611,11 +6481,11 @@
         "children": [],
         "depends_on": null,
         "help": null,
-        "id": "ESP_ROM_USB_SERIAL_DEVICE_NUM",
-        "name": "ESP_ROM_USB_SERIAL_DEVICE_NUM",
+        "id": "ESP_ROM_HAS_VERSION",
+        "name": "ESP_ROM_HAS_VERSION",
         "range": null,
         "title": null,
-        "type": "int"
+        "type": "bool"
     },
     {
         "children": [],
@@ -4633,6 +6503,36 @@
         "help": null,
         "id": "ESP_ROM_HAS_OUTPUT_PUTC_FUNC",
         "name": "ESP_ROM_HAS_OUTPUT_PUTC_FUNC",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_NO_USB_SERIAL_OUTPUT_API",
+        "name": "ESP_ROM_NO_USB_SERIAL_OUTPUT_API",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_HAS_SUBOPTIMAL_NEWLIB_ON_MISALIGNED_MEMORY",
+        "name": "ESP_ROM_HAS_SUBOPTIMAL_NEWLIB_ON_MISALIGNED_MEMORY",
+        "range": null,
+        "title": null,
+        "type": "bool"
+    },
+    {
+        "children": [],
+        "depends_on": null,
+        "help": null,
+        "id": "ESP_ROM_SUPPORT_SECURE_BOOT_FAST_WAKEUP",
+        "name": "ESP_ROM_SUPPORT_SECURE_BOOT_FAST_WAKEUP",
         "range": null,
         "title": null,
         "type": "bool"
@@ -4693,6 +6593,293 @@
         "depends_on": null,
         "id": "boot-rom-behavior",
         "title": "Boot ROM Behavior",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
+                "children": [
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "This configuration sets the IRAM size for the TEE module.\nThis should be 256-byte (0x100) aligned.",
+                                "id": "SECURE_TEE_IRAM_SIZE",
+                                "name": "SECURE_TEE_IRAM_SIZE",
+                                "range": null,
+                                "title": "IRAM region size",
+                                "type": "hex"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "This configuration sets the DRAM size for the TEE module.\nThis should be 256-byte (0x100) aligned.",
+                                "id": "SECURE_TEE_DRAM_SIZE",
+                                "name": "SECURE_TEE_DRAM_SIZE",
+                                "range": null,
+                                "title": "DRAM region size",
+                                "type": "hex"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "This configuration sets the stack size for the TEE module.\nThe TEE stack will be allocated from the TEE DRAM region.\nThis should be 16-byte (0x10) aligned.",
+                                "id": "SECURE_TEE_STACK_SIZE",
+                                "name": "SECURE_TEE_STACK_SIZE",
+                                "range": null,
+                                "title": "Stack size",
+                                "type": "hex"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "This configuration sets the interrupt stack size for the TEE module.\nThe TEE interrupt stack will be allocated from the TEE DRAM region.\nThis should be 16-byte (0x10) aligned.",
+                                "id": "SECURE_TEE_INTR_STACK_SIZE",
+                                "name": "SECURE_TEE_INTR_STACK_SIZE",
+                                "range": null,
+                                "title": "Interrupt Stack size",
+                                "type": "hex"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "This should be a multiple of MMU_PAGE_SIZE.",
+                                "id": "SECURE_TEE_IROM_SIZE",
+                                "name": "SECURE_TEE_IROM_SIZE",
+                                "range": null,
+                                "title": null,
+                                "type": "hex"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "This should be a multiple of MMU_PAGE_SIZE.",
+                                "id": "SECURE_TEE_DROM_SIZE",
+                                "name": "SECURE_TEE_DROM_SIZE",
+                                "range": null,
+                                "title": null,
+                                "type": "hex"
+                            }
+                        ],
+                        "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                        "id": "esp-tee-trusted-execution-environment--enable-the-esp-tee-framework-memory-configuration",
+                        "title": "Memory Configuration",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice SECURE_TEE_SEC_STG_MODE>",
+                                        "help": "Secure storage will be encrypted by a constant key embedded in the TEE firmware",
+                                        "id": "SECURE_TEE_SEC_STG_MODE_DEVELOPMENT",
+                                        "name": "SECURE_TEE_SEC_STG_MODE_DEVELOPMENT",
+                                        "range": null,
+                                        "title": "Development",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice SECURE_TEE_SEC_STG_MODE>",
+                                        "help": "Secure storage will be encrypted by the data stored in eFuse block\nconfigured through the SECURE_TEE_SEC_STG_EFUSE_HMAC_KEY_ID option",
+                                        "id": "SECURE_TEE_SEC_STG_MODE_RELEASE",
+                                        "name": "SECURE_TEE_SEC_STG_MODE_RELEASE",
+                                        "range": null,
+                                        "title": "Release",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "SECURE_ENABLE_TEE && SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "Select the TEE secure storage mode",
+                                "id": "esp-tee-trusted-execution-environment--enable-the-esp-tee-framework-secure-services-secure-storage-mode",
+                                "name": "SECURE_TEE_SEC_STG_MODE",
+                                "title": "Secure Storage: Mode",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SECURE_TEE_SEC_STG_MODE_RELEASE && SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "eFuse block key ID storing the HMAC key for deriving the TEE secure storage encryption keys",
+                                "id": "SECURE_TEE_SEC_STG_EFUSE_HMAC_KEY_ID",
+                                "name": "SECURE_TEE_SEC_STG_EFUSE_HMAC_KEY_ID",
+                                "range": null,
+                                "title": "Secure Storage: eFuse HMAC key ID for storage encryption keys",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "eFuse block key ID storing the HMAC key for deriving PBKDF2-based ECDSA keys",
+                                "id": "SECURE_TEE_PBKDF2_EFUSE_HMAC_KEY_ID",
+                                "name": "SECURE_TEE_PBKDF2_EFUSE_HMAC_KEY_ID",
+                                "range": null,
+                                "title": "Secure Storage: eFuse HMAC key ID for PBKDF2 key derivation",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "Enable ECDSA signing with the SECP192R1 curve using the TEE secure storage.",
+                                "id": "SECURE_TEE_SEC_STG_SUPPORT_SECP192R1_SIGN",
+                                "name": "SECURE_TEE_SEC_STG_SUPPORT_SECP192R1_SIGN",
+                                "range": null,
+                                "title": "Secure Storage: Support signing with the ECDSA SECP192R1 curve",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "SECURE_TEE_ATTESTATION && SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                        "help": "This configuration sets the key ID from the TEE secure storage\nstoring the ECDSA keypair for executing sign/verify operations\nfrom the TEE side for attestation.",
+                                        "id": "SECURE_TEE_ATT_KEY_STR_ID",
+                                        "name": "SECURE_TEE_ATT_KEY_STR_ID",
+                                        "range": null,
+                                        "title": "Attestation: Secure Storage key ID for EAT signing",
+                                        "type": "string"
+                                    }
+                                ],
+                                "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "This configuration enables the support for the Attestation service.",
+                                "id": "SECURE_TEE_ATTESTATION",
+                                "name": "SECURE_TEE_ATTESTATION",
+                                "range": null,
+                                "title": "Enable Attestation",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                        "id": "esp-tee-trusted-execution-environment--enable-the-esp-tee-framework-secure-services",
+                        "title": "Secure Services",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                        "help": "This configuration restricts access to TEE-reserved regions in external flash\nby making them inaccessible to the REE via the SPI1 interface (physical addresses).\n\nWith this enabled, all SPI flash read, write, or erase operations over SPI1 will\nbe routed through service calls to the TEE, introducing additional performance\noverhead.\n\nWhen Flash Encryption (SECURE_FLASH_ENC_ENABLED) is enabled, the REE can still\naccess TEE-related flash partitions over SPI1, but read operations will return\nencrypted data contents. This prevents attackers from inferring the TEE contents\nwith direct reads.\n\nAdditionally, with Secure Boot enabled (SECURE_BOOT_V2_ENABLED), any unauthorized\nmodifications to the TEE firmware will be detected during boot, causing signature\nverification to fail. Thus, these options provide a level of protection suitable for\nmost applications. However, while the TEE firmware integrity is protected, other TEE\npartitions (Secure Storage, TEE OTA data) can be manipulated through direct writes.\n\nEnable this option only when complete isolation of all TEE flash regions is required,\neven with the associated performance tradeoffs.\n\nNote: All accesses to the TEE partitions over SPI0 (i.e. the MMU) are blocked\nunconditionally.",
+                        "id": "SECURE_TEE_EXT_FLASH_MEMPROT_SPI1",
+                        "name": "SECURE_TEE_EXT_FLASH_MEMPROT_SPI1",
+                        "range": null,
+                        "title": "Memprot: Isolate TEE flash regions over SPI1",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice SECURE_TEE_LOG_LEVEL>",
+                                        "help": null,
+                                        "id": "SECURE_TEE_LOG_LEVEL_NONE",
+                                        "name": "SECURE_TEE_LOG_LEVEL_NONE",
+                                        "range": null,
+                                        "title": "No output",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice SECURE_TEE_LOG_LEVEL>",
+                                        "help": null,
+                                        "id": "SECURE_TEE_LOG_LEVEL_ERROR",
+                                        "name": "SECURE_TEE_LOG_LEVEL_ERROR",
+                                        "range": null,
+                                        "title": "Error",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice SECURE_TEE_LOG_LEVEL>",
+                                        "help": null,
+                                        "id": "SECURE_TEE_LOG_LEVEL_WARN",
+                                        "name": "SECURE_TEE_LOG_LEVEL_WARN",
+                                        "range": null,
+                                        "title": "Warning",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice SECURE_TEE_LOG_LEVEL>",
+                                        "help": null,
+                                        "id": "SECURE_TEE_LOG_LEVEL_INFO",
+                                        "name": "SECURE_TEE_LOG_LEVEL_INFO",
+                                        "range": null,
+                                        "title": "Info",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice SECURE_TEE_LOG_LEVEL>",
+                                        "help": null,
+                                        "id": "SECURE_TEE_LOG_LEVEL_DEBUG",
+                                        "name": "SECURE_TEE_LOG_LEVEL_DEBUG",
+                                        "range": null,
+                                        "title": "Debug",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice SECURE_TEE_LOG_LEVEL>",
+                                        "help": null,
+                                        "id": "SECURE_TEE_LOG_LEVEL_VERBOSE",
+                                        "name": "SECURE_TEE_LOG_LEVEL_VERBOSE",
+                                        "range": null,
+                                        "title": "Verbose",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "SECURE_TEE_DEBUG_MODE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                                "help": "Specify how much output to see in TEE logs.",
+                                "id": "esp-tee-trusted-execution-environment--enable-the-esp-tee-framework-enable-debug-mode-log-verbosity",
+                                "name": "SECURE_TEE_LOG_LEVEL",
+                                "title": "Log verbosity",
+                                "type": "choice"
+                            }
+                        ],
+                        "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                        "help": "This configuration enables the logging from the TEE module.",
+                        "id": "SECURE_TEE_DEBUG_MODE",
+                        "name": "SECURE_TEE_DEBUG_MODE",
+                        "range": null,
+                        "title": "Enable Debug Mode",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": "IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5",
+                "help": "This configuration enables the Trusted Execution Environment (TEE) feature.",
+                "id": "SECURE_ENABLE_TEE",
+                "name": "SECURE_ENABLE_TEE",
+                "range": null,
+                "title": "Enable the ESP-TEE framework",
+                "type": "bool"
+            },
+            {
+                "children": [],
+                "depends_on": "IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5",
+                "help": null,
+                "id": "SECURE_TEE_LOG_LEVEL",
+                "name": "SECURE_TEE_LOG_LEVEL",
+                "range": null,
+                "title": null,
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": "SECURE_ENABLE_TEE && (IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5)",
+                "help": "This configuration sets up the TEE framework as required for executing the test suite.",
+                "id": "SECURE_TEE_TEST_MODE",
+                "name": "SECURE_TEE_TEST_MODE",
+                "range": null,
+                "title": "Enable Test Mode",
+                "type": "bool"
+            }
+        ],
+        "depends_on": "IDF_TARGET_ESP32C6 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5",
+        "id": "esp-tee-trusted-execution-environment-",
+        "title": "ESP-TEE (Trusted Execution Environment)",
         "type": "menu"
     },
     {
@@ -4847,16 +7034,6 @@
                         "name": "ESPTOOLPY_FLASHFREQ_40M",
                         "range": null,
                         "title": "40 MHz",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "<choice ESPTOOLPY_FLASHFREQ>",
-                        "help": null,
-                        "id": "ESPTOOLPY_FLASHFREQ_26M",
-                        "name": "ESPTOOLPY_FLASHFREQ_26M",
-                        "range": null,
-                        "title": "26 MHz",
                         "type": "bool"
                     },
                     {
@@ -5840,88 +8017,48 @@
                                 "children": [
                                     {
                                         "children": [],
-                                        "depends_on": "<choice ESP32_REV_MIN>",
+                                        "depends_on": "<choice ESP32C6_REV_MIN>",
                                         "help": null,
-                                        "id": "ESP32_REV_MIN_0",
-                                        "name": "ESP32_REV_MIN_0",
+                                        "id": "ESP32C6_REV_MIN_0",
+                                        "name": "ESP32C6_REV_MIN_0",
                                         "range": null,
-                                        "title": "Rev v0.0 (ECO0)",
+                                        "title": "Rev v0.0",
                                         "type": "bool"
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "<choice ESP32_REV_MIN>",
+                                        "depends_on": "<choice ESP32C6_REV_MIN>",
                                         "help": null,
-                                        "id": "ESP32_REV_MIN_1",
-                                        "name": "ESP32_REV_MIN_1",
+                                        "id": "ESP32C6_REV_MIN_1",
+                                        "name": "ESP32C6_REV_MIN_1",
                                         "range": null,
-                                        "title": "Rev v1.0 (ECO1)",
+                                        "title": "Rev v0.1 (ECO1)",
                                         "type": "bool"
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "<choice ESP32_REV_MIN>",
+                                        "depends_on": "<choice ESP32C6_REV_MIN>",
                                         "help": null,
-                                        "id": "ESP32_REV_MIN_1_1",
-                                        "name": "ESP32_REV_MIN_1_1",
+                                        "id": "ESP32C6_REV_MIN_2",
+                                        "name": "ESP32C6_REV_MIN_2",
                                         "range": null,
-                                        "title": "Rev v1.1 (ECO1.1)",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "<choice ESP32_REV_MIN>",
-                                        "help": null,
-                                        "id": "ESP32_REV_MIN_2",
-                                        "name": "ESP32_REV_MIN_2",
-                                        "range": null,
-                                        "title": "Rev v2.0 (ECO2)",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "<choice ESP32_REV_MIN>",
-                                        "help": null,
-                                        "id": "ESP32_REV_MIN_3",
-                                        "name": "ESP32_REV_MIN_3",
-                                        "range": null,
-                                        "title": "Rev v3.0 (ECO3)",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "<choice ESP32_REV_MIN>",
-                                        "help": null,
-                                        "id": "ESP32_REV_MIN_3_1",
-                                        "name": "ESP32_REV_MIN_3_1",
-                                        "range": null,
-                                        "title": "Rev v3.1 (ECO4)",
+                                        "title": "Rev v0.2",
                                         "type": "bool"
                                     }
                                 ],
                                 "depends_on": null,
                                 "help": "Required minimum chip revision. ESP-IDF will check for it and\nreject to boot if the chip revision fails the check.\nThis ensures the chip used will have some modifications (features, or bugfixes).\n\nThe complied binary will only support chips above this revision,\nthis will also help to reduce binary size.",
-                                "id": "component-config-hardware-settings-chip-revision-minimum-supported-esp32-revision",
-                                "name": "ESP32_REV_MIN",
-                                "title": "Minimum Supported ESP32 Revision",
+                                "id": "component-config-hardware-settings-chip-revision-minimum-supported-esp32-c6-revision",
+                                "name": "ESP32C6_REV_MIN",
+                                "title": "Minimum Supported ESP32-C6 Revision",
                                 "type": "choice"
                             },
                             {
                                 "children": [],
                                 "depends_on": null,
                                 "help": null,
-                                "id": "ESP32_REV_MIN",
-                                "name": "ESP32_REV_MIN",
-                                "range": null,
-                                "title": null,
-                                "type": "int"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": null,
-                                "id": "ESP32_REV_MIN_FULL",
-                                "name": "ESP32_REV_MIN_FULL",
+                                "id": "ESP32C6_REV_MIN_FULL",
+                                "name": "ESP32C6_REV_MIN_FULL",
                                 "range": null,
                                 "title": null,
                                 "type": "int"
@@ -5940,8 +8077,8 @@
                                 "children": [],
                                 "depends_on": null,
                                 "help": null,
-                                "id": "ESP32_REV_MAX_FULL",
-                                "name": "ESP32_REV_MAX_FULL",
+                                "id": "ESP32C6_REV_MAX_FULL",
+                                "name": "ESP32C6_REV_MAX_FULL",
                                 "range": null,
                                 "title": null,
                                 "type": "int"
@@ -5963,7 +8100,7 @@
                                 "id": "ESP_EFUSE_BLOCK_REV_MIN_FULL",
                                 "name": "ESP_EFUSE_BLOCK_REV_MIN_FULL",
                                 "range": null,
-                                "title": "Minimum Supported ESP32 eFuse Block Revision",
+                                "title": "Minimum Supported ESP32-C6 eFuse Block Revision",
                                 "type": "int"
                             },
                             {
@@ -6088,29 +8225,29 @@
                                 "children": [
                                     {
                                         "children": [],
-                                        "depends_on": "<choice ESP32_UNIVERSAL_MAC_ADDRESSES>",
+                                        "depends_on": "<choice ESP32C6_UNIVERSAL_MAC_ADDRESSES>",
                                         "help": null,
-                                        "id": "ESP32_UNIVERSAL_MAC_ADDRESSES_TWO",
-                                        "name": "ESP32_UNIVERSAL_MAC_ADDRESSES_TWO",
+                                        "id": "ESP32C6_UNIVERSAL_MAC_ADDRESSES_TWO",
+                                        "name": "ESP32C6_UNIVERSAL_MAC_ADDRESSES_TWO",
                                         "range": null,
                                         "title": "Two",
                                         "type": "bool"
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "<choice ESP32_UNIVERSAL_MAC_ADDRESSES>",
+                                        "depends_on": "<choice ESP32C6_UNIVERSAL_MAC_ADDRESSES>",
                                         "help": null,
-                                        "id": "ESP32_UNIVERSAL_MAC_ADDRESSES_FOUR",
-                                        "name": "ESP32_UNIVERSAL_MAC_ADDRESSES_FOUR",
+                                        "id": "ESP32C6_UNIVERSAL_MAC_ADDRESSES_FOUR",
+                                        "name": "ESP32C6_UNIVERSAL_MAC_ADDRESSES_FOUR",
                                         "range": null,
                                         "title": "Four",
                                         "type": "bool"
                                     }
                                 ],
                                 "depends_on": null,
-                                "help": "Configure the number of universally administered (by IEEE) MAC addresses.\nDuring initialization, MAC addresses for each network interface are generated or derived from a\nsingle base MAC address.\nIf the number of universal MAC addresses is four, all four interfaces (WiFi station, WiFi softap,\nBluetooth and Ethernet) receive a universally administered MAC address. These are generated\nsequentially by adding 0, 1, 2 and 3 (respectively) to the final octet of the base MAC address.\nIf the number of universal MAC addresses is two, only two interfaces (WiFi station and Bluetooth)\nreceive a universally administered MAC address. These are generated sequentially by adding 0\nand 1 (respectively) to the base MAC address. The remaining two interfaces (WiFi softap and Ethernet)\nreceive local MAC addresses. These are derived from the universal WiFi station and Bluetooth MAC\naddresses, respectively.\nWhen using the default (Espressif-assigned) base MAC address, either setting can be used. When using\na custom universal MAC address range, the correct setting will depend on the allocation of MAC\naddresses in this range (either 2 or 4 per device.)",
+                                "help": "Configure the number of universally administered (by IEEE) MAC addresses.\n\nDuring initialization, MAC addresses for each network interface are generated or derived from a\nsingle base MAC address.\n\nIf the number of universal MAC addresses is four, all four interfaces (WiFi station, WiFi softap,\nBluetooth and Ethernet) receive a universally administered MAC address. These are generated\nsequentially by adding 0, 1, 2 and 3 (respectively) to the final octet of the base MAC address.\n\nIf the number of universal MAC addresses is two, only two interfaces (WiFi station and Bluetooth)\nreceive a universally administered MAC address. These are generated sequentially by adding 0\nand 1 (respectively) to the base MAC address. The remaining two interfaces (WiFi softap and Ethernet)\nreceive local MAC addresses. These are derived from the universal WiFi station and Bluetooth MAC\naddresses, respectively.\n\nWhen using the default (Espressif-assigned) base MAC address, either setting can be used. When using\na custom universal MAC address range, the correct setting will depend on the allocation of MAC\naddresses in this range (either 2 or 4 per device.)\n\nNote that ESP32-C6 has no integrated Ethernet MAC. Although it's possible to use the esp_read_mac()\nAPI to return a MAC for Ethernet, this can only be used with an external MAC peripheral.",
                                 "id": "component-config-hardware-settings-mac-config-number-of-universally-administered-by-ieee-mac-address",
-                                "name": "ESP32_UNIVERSAL_MAC_ADDRESSES",
+                                "name": "ESP32C6_UNIVERSAL_MAC_ADDRESSES",
                                 "title": "Number of universally administered (by IEEE) MAC address",
                                 "type": "choice"
                             },
@@ -6118,8 +8255,8 @@
                                 "children": [],
                                 "depends_on": null,
                                 "help": null,
-                                "id": "ESP32_UNIVERSAL_MAC_ADDRESSES",
-                                "name": "ESP32_UNIVERSAL_MAC_ADDRESSES",
+                                "id": "ESP32C6_UNIVERSAL_MAC_ADDRESSES",
+                                "name": "ESP32C6_UNIVERSAL_MAC_ADDRESSES",
                                 "range": null,
                                 "title": null,
                                 "type": "int"
@@ -6282,7 +8419,7 @@
                                         "id": "RTC_CLK_SRC_INT_RC",
                                         "name": "RTC_CLK_SRC_INT_RC",
                                         "range": null,
-                                        "title": "Internal 150 kHz RC oscillator",
+                                        "title": "Internal 136 kHz RC oscillator",
                                         "type": "bool"
                                     },
                                     {
@@ -6292,7 +8429,7 @@
                                         "id": "RTC_CLK_SRC_EXT_CRYS",
                                         "name": "RTC_CLK_SRC_EXT_CRYS",
                                         "range": null,
-                                        "title": "External 32kHz crystal",
+                                        "title": "External 32 kHz crystal",
                                         "type": "bool"
                                     },
                                     {
@@ -6302,71 +8439,41 @@
                                         "id": "RTC_CLK_SRC_EXT_OSC",
                                         "name": "RTC_CLK_SRC_EXT_OSC",
                                         "range": null,
-                                        "title": "External 32kHz oscillator at 32K_XN pin",
+                                        "title": "External 32 kHz oscillator at 32K_XP pin",
                                         "type": "bool"
                                     },
                                     {
                                         "children": [],
-                                        "depends_on": "<choice RTC_CLK_SRC>",
-                                        "help": null,
-                                        "id": "RTC_CLK_SRC_INT_8MD256",
-                                        "name": "RTC_CLK_SRC_INT_8MD256",
+                                        "depends_on": "RTC_CLK_SRC_USE_DANGEROUS_RC32K_ALLOWED && <choice RTC_CLK_SRC>",
+                                        "help": "To be able to select this option, please select `RTC_CLK_SRC_USE_DANGEROUS_RC32K_ALLOWED` first.\nThis option will be removed in IDF v6.0.",
+                                        "id": "RTC_CLK_SRC_INT_RC32K",
+                                        "name": "RTC_CLK_SRC_INT_RC32K",
                                         "range": null,
-                                        "title": "Internal 8.5MHz oscillator, divided by 256 (~33kHz)",
+                                        "title": "Internal 32 kHz RC oscillator (NOT RECOMMENDED TO USE, READ DOCS FIRST)",
                                         "type": "bool"
                                     }
                                 ],
                                 "depends_on": null,
-                                "help": "Choose which clock is used as RTC clock source.\n\n- \"Internal 150kHz oscillator\" option provides lowest deep sleep current\n    consumption, and does not require extra external components. However\n    frequency stability with respect to temperature is poor, so time may\n    drift in deep/light sleep modes.\n- \"External 32kHz crystal\" provides better frequency stability, at the\n    expense of slightly higher (1uA) deep sleep current consumption.\n- \"External 32kHz oscillator\" allows using 32kHz clock generated by an\n    external circuit. In this case, external clock signal must be connected\n    to 32K_XN pin. Amplitude should be <1.2V in case of sine wave signal,\n    and <1V in case of square wave signal. Common mode voltage should be\n    0.1 < Vcm < 0.5Vamp, where Vamp is the signal amplitude.\n    Additionally, 1nF capacitor must be connected between 32K_XP pin and\n    ground. 32K_XP pin can not be used as a GPIO in this case.\n- \"Internal 8.5MHz oscillator divided by 256\" option results in higher\n    deep sleep current (by 5uA) but has better frequency stability than\n    the internal 150kHz oscillator. It does not require external components.",
+                                "help": "Choose which clock is used as RTC clock source.",
                                 "id": "component-config-hardware-settings-rtc-clock-config-rtc-clock-source",
                                 "name": "RTC_CLK_SRC",
                                 "title": "RTC clock source",
                                 "type": "choice"
                             },
                             {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "<choice RTC_EXT_CRYST_ADDIT_CURRENT_METHOD>",
-                                        "help": null,
-                                        "id": "RTC_EXT_CRYST_ADDIT_CURRENT_NONE",
-                                        "name": "RTC_EXT_CRYST_ADDIT_CURRENT_NONE",
-                                        "range": null,
-                                        "title": "None",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "<choice RTC_EXT_CRYST_ADDIT_CURRENT_METHOD>",
-                                        "help": null,
-                                        "id": "RTC_EXT_CRYST_ADDIT_CURRENT",
-                                        "name": "RTC_EXT_CRYST_ADDIT_CURRENT",
-                                        "range": null,
-                                        "title": "Method 1",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "<choice RTC_EXT_CRYST_ADDIT_CURRENT_METHOD>",
-                                        "help": null,
-                                        "id": "RTC_EXT_CRYST_ADDIT_CURRENT_V2",
-                                        "name": "RTC_EXT_CRYST_ADDIT_CURRENT_V2",
-                                        "range": null,
-                                        "title": "Method 2",
-                                        "type": "bool"
-                                    }
-                                ],
-                                "depends_on": "RTC_CLK_SRC_EXT_CRYS && ESP32_REV_MIN_FULL < 200",
-                                "help": "With some 32kHz crystal configurations, the X32N and X32P pins may not have enough\ndrive strength to keep the crystal oscillating. Choose the method to provide\nadditional current from touchpad 9 to the external 32kHz crystal. Note that\nthe deep sleep current is slightly high (4-5uA) and the touchpad and the\nwakeup sources of both touchpad and ULP are not available in method 1 and method 2.\n\nThis problem is fixed in ESP32 ECO 3, so this workaround is not needed. Setting the\nproject configuration to minimum revision ECO3 will disable this option, , allow\nall wakeup sources, and save some code size.\n\n- \"None\" option will not provide additional current to external crystal\n- \"Method 1\" option can't ensure 100% to solve the external 32k crystal start failed\n    issue, but the touchpad can work in this method.\n- \"Method 2\" option can solve the external 32k issue, but the touchpad can't work\n    in this method.",
-                                "id": "component-config-hardware-settings-rtc-clock-config-additional-current-for-external-32khz-crystal",
-                                "name": "RTC_EXT_CRYST_ADDIT_CURRENT_METHOD",
-                                "title": "Additional current for external 32kHz crystal",
-                                "type": "choice"
+                                "children": [],
+                                "depends_on": null,
+                                "help": "Internal RC32K clock is unstable at extreme temperatures and is not recommended for use.",
+                                "id": "RTC_CLK_SRC_USE_DANGEROUS_RC32K_ALLOWED",
+                                "name": "RTC_CLK_SRC_USE_DANGEROUS_RC32K_ALLOWED",
+                                "range": null,
+                                "title": "Confirm to use the unrecommended 32 kHz RC oscillator (READ DOCS FIRST)",
+                                "type": "bool"
                             },
                             {
                                 "children": [],
                                 "depends_on": null,
-                                "help": "When the startup code initializes RTC_SLOW_CLK, it can perform\ncalibration by comparing the RTC_SLOW_CLK frequency with main XTAL\nfrequency. This option sets the number of RTC_SLOW_CLK cycles measured\nby the calibration routine. Higher numbers increase calibration\nprecision, which may be important for applications which spend a lot of\ntime in deep sleep. Lower numbers reduce startup time.\n\nWhen this option is set to 0, clock calibration will not be performed at\nstartup, and approximate clock frequencies will be assumed:\n\n- 150000 Hz if internal RC oscillator is used as clock source. For this use value 1024.\n- 32768 Hz if the 32k crystal oscillator is used. For this use value 3000 or more.\n    In case more value will help improve the definition of the launch of the crystal.\n    If the crystal could not start, it will be switched to internal RC.",
+                                "help": "When the startup code initializes RTC_SLOW_CLK, it can perform\ncalibration by comparing the RTC_SLOW_CLK frequency with main XTAL\nfrequency. This option sets the number of RTC_SLOW_CLK cycles measured\nby the calibration routine. Higher numbers increase calibration\nprecision, which may be important for applications which spend a lot of\ntime in deep sleep. Lower numbers reduce startup time.\n\nWhen this option is set to 0, clock calibration will not be performed at\nstartup, and approximate clock frequencies will be assumed:\n\n- 136000 Hz if internal RC oscillator is used as clock source. For this use value 1024.\n- 32768 Hz if the 32k crystal oscillator is used. For this use value 3000 or more.\n    In case more value will help improve the definition of the launch of the crystal.\n    If the crystal could not start, it will be switched to internal RC.",
                                 "id": "RTC_CLK_CAL_CYCLES",
                                 "name": "RTC_CLK_CAL_CYCLES",
                                 "range": [
@@ -6374,16 +8481,6 @@
                                     32766
                                 ],
                                 "title": "Number of cycles for RTC_SLOW_CLK calibration",
-                                "type": "int"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "RTC_CLK_SRC_EXT_CRYS",
-                                "help": "Number of attempts to repeat 32k XTAL calibration\nbefore giving up and switching to the internal RC.\nIncrease this option if the 32k crystal oscillator\ndoes not start and switches to internal RC.",
-                                "id": "RTC_XTAL_CAL_RETRY",
-                                "name": "RTC_XTAL_CAL_RETRY",
-                                "range": null,
-                                "title": "Number of attempts to repeat 32k XTAL calibration",
                                 "type": "int"
                             },
                             {
@@ -6620,45 +8717,15 @@
                                         "children": [],
                                         "depends_on": "<choice XTAL_FREQ>",
                                         "help": null,
-                                        "id": "XTAL_FREQ_26",
-                                        "name": "XTAL_FREQ_26",
-                                        "range": null,
-                                        "title": "26 MHz",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "<choice XTAL_FREQ>",
-                                        "help": null,
-                                        "id": "XTAL_FREQ_32",
-                                        "name": "XTAL_FREQ_32",
-                                        "range": null,
-                                        "title": "32 MHz",
-                                        "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "<choice XTAL_FREQ>",
-                                        "help": null,
                                         "id": "XTAL_FREQ_40",
                                         "name": "XTAL_FREQ_40",
                                         "range": null,
                                         "title": "40 MHz",
                                         "type": "bool"
-                                    },
-                                    {
-                                        "children": [],
-                                        "depends_on": "<choice XTAL_FREQ>",
-                                        "help": null,
-                                        "id": "XTAL_FREQ_AUTO",
-                                        "name": "XTAL_FREQ_AUTO",
-                                        "range": null,
-                                        "title": "Autodetect",
-                                        "type": "bool"
                                     }
                                 ],
                                 "depends_on": null,
-                                "help": "This option selects the operating frequency of the XTAL (crystal) clock used to drive the ESP target.\nThe selected value MUST reflect the frequency of the given hardware.\n\nNote: On ESP32, the XTAL_FREQ_AUTO option allows the ESP target to automatically estimating XTAL clock's\noperating frequency. The ESP32 uses the internal 8MHZ as a reference when estimating. Due to the internal\noscillator's frequency being temperature dependent, usage of the XTAL_FREQ_AUTO is not recommended in\napplications that operate in high ambient temperatures or use high-temperature qualified chips and modules.",
+                                "help": "This option selects the operating frequency of the XTAL (crystal) clock used to drive the ESP target.\nThe selected value MUST reflect the frequency of the given hardware.",
                                 "id": "component-config-hardware-settings-main-xtal-config-main-xtal-frequency",
                                 "name": "XTAL_FREQ",
                                 "title": "Main XTAL frequency",
@@ -6692,60 +8759,10 @@
                                                         "children": [],
                                                         "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
                                                         "help": null,
-                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_0",
-                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_0",
+                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_7",
+                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_7",
                                                         "range": null,
-                                                        "title": "2.43V +/- 0.05",
-                                                        "type": "bool"
-                                                    },
-                                                    {
-                                                        "children": [],
-                                                        "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                        "help": null,
-                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_1",
-                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_1",
-                                                        "range": null,
-                                                        "title": "2.48V +/- 0.05",
-                                                        "type": "bool"
-                                                    },
-                                                    {
-                                                        "children": [],
-                                                        "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                        "help": null,
-                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_2",
-                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_2",
-                                                        "range": null,
-                                                        "title": "2.58V +/- 0.05",
-                                                        "type": "bool"
-                                                    },
-                                                    {
-                                                        "children": [],
-                                                        "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                        "help": null,
-                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_3",
-                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_3",
-                                                        "range": null,
-                                                        "title": "2.62V +/- 0.05",
-                                                        "type": "bool"
-                                                    },
-                                                    {
-                                                        "children": [],
-                                                        "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                        "help": null,
-                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_4",
-                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_4",
-                                                        "range": null,
-                                                        "title": "2.67V +/- 0.05",
-                                                        "type": "bool"
-                                                    },
-                                                    {
-                                                        "children": [],
-                                                        "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
-                                                        "help": null,
-                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_5",
-                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_5",
-                                                        "range": null,
-                                                        "title": "2.70V +/- 0.05",
+                                                        "title": "2.51V",
                                                         "type": "bool"
                                                     },
                                                     {
@@ -6755,22 +8772,52 @@
                                                         "id": "ESP_BROWNOUT_DET_LVL_SEL_6",
                                                         "name": "ESP_BROWNOUT_DET_LVL_SEL_6",
                                                         "range": null,
-                                                        "title": "2.77V +/- 0.05",
+                                                        "title": "2.64V",
                                                         "type": "bool"
                                                     },
                                                     {
                                                         "children": [],
                                                         "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
                                                         "help": null,
-                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_7",
-                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_7",
+                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_5",
+                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_5",
                                                         "range": null,
-                                                        "title": "2.80V +/- 0.05",
+                                                        "title": "2.76V",
+                                                        "type": "bool"
+                                                    },
+                                                    {
+                                                        "children": [],
+                                                        "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
+                                                        "help": null,
+                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_4",
+                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_4",
+                                                        "range": null,
+                                                        "title": "2.92V",
+                                                        "type": "bool"
+                                                    },
+                                                    {
+                                                        "children": [],
+                                                        "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
+                                                        "help": null,
+                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_3",
+                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_3",
+                                                        "range": null,
+                                                        "title": "3.10V",
+                                                        "type": "bool"
+                                                    },
+                                                    {
+                                                        "children": [],
+                                                        "depends_on": "<choice ESP_BROWNOUT_DET_LVL_SEL>",
+                                                        "help": null,
+                                                        "id": "ESP_BROWNOUT_DET_LVL_SEL_2",
+                                                        "name": "ESP_BROWNOUT_DET_LVL_SEL_2",
+                                                        "range": null,
+                                                        "title": "3.27V",
                                                         "type": "bool"
                                                     }
                                                 ],
                                                 "depends_on": "ESP_BROWNOUT_DET",
-                                                "help": "The brownout detector will reset the chip when the supply voltage is approximately\nbelow this level. Note that there may be some variation of brownout voltage level\nbetween each ESP chip.\n\n#The voltage levels here are estimates, more work needs to be done to figure out the exact voltages\n#of the brownout threshold levels.",
+                                                "help": "The brownout detector will reset the chip when the supply voltage is approximately\nbelow this level. Note that there may be some variation of brownout voltage level\nbetween each chip.\n\n#The voltage levels here are estimates, more work needs to be done to figure out the exact voltages\n#of the brownout threshold levels.",
                                                 "id": "component-config-hardware-settings-power-supplier-brownout-detector-hardware-brownout-detect-reset-brownout-voltage-level",
                                                 "name": "ESP_BROWNOUT_DET_LVL_SEL",
                                                 "title": "Brownout voltage level",
@@ -6778,7 +8825,7 @@
                                             }
                                         ],
                                         "depends_on": "!IDF_ENV_FPGA",
-                                        "help": "The ESP has a built-in brownout detector which can detect if the voltage is lower than\na specific value. If this happens, it will reset the chip in order to prevent unintended\nbehaviour.",
+                                        "help": "The ESP32-C6 has a built-in brownout detector which can detect if the voltage is lower than\na specific value. If this happens, it will reset the chip in order to prevent unintended\nbehaviour.",
                                         "id": "ESP_BROWNOUT_DET",
                                         "name": "ESP_BROWNOUT_DET",
                                         "range": null,
@@ -6798,7 +8845,7 @@
                                     {
                                         "children": [],
                                         "depends_on": null,
-                                        "help": "This config allows to trigger an interrupt when brownout detected. Software restart will be done\nat the end of the default callback.\nTwo occasions need to restart the chip with interrupt so far.\n(1). For ESP32 version 1, brown-out reset function doesn't work (see ESP32 errata 3.4).\n    So that we must restart from interrupt.\n(2). For special workflow, the chip needs do more things instead of restarting directly. This part\n    needs to be done in callback function of interrupt.",
+                                        "help": "This config allows to trigger an interrupt when brownout detected. Software restart will be done\nat the end of the default callback.\nThis is because for some special workflow, the chip needs do more things when brownout happens\nbefore restart instead of restarting directly. This part needs to be done in callback function\nof interrupt.",
                                         "id": "ESP_BROWNOUT_USE_INTR",
                                         "name": "ESP_BROWNOUT_USE_INTR",
                                         "range": null,
@@ -7056,20 +9103,20 @@
                                 "children": [],
                                 "depends_on": "<choice ESP_DEFAULT_CPU_FREQ_MHZ>",
                                 "help": null,
-                                "id": "ESP_DEFAULT_CPU_FREQ_MHZ_160",
-                                "name": "ESP_DEFAULT_CPU_FREQ_MHZ_160",
+                                "id": "ESP_DEFAULT_CPU_FREQ_MHZ_120",
+                                "name": "ESP_DEFAULT_CPU_FREQ_MHZ_120",
                                 "range": null,
-                                "title": "160 MHz",
+                                "title": "120 MHz",
                                 "type": "bool"
                             },
                             {
                                 "children": [],
                                 "depends_on": "<choice ESP_DEFAULT_CPU_FREQ_MHZ>",
                                 "help": null,
-                                "id": "ESP_DEFAULT_CPU_FREQ_MHZ_240",
-                                "name": "ESP_DEFAULT_CPU_FREQ_MHZ_240",
+                                "id": "ESP_DEFAULT_CPU_FREQ_MHZ_160",
+                                "name": "ESP_DEFAULT_CPU_FREQ_MHZ_160",
                                 "range": null,
-                                "title": "240 MHz",
+                                "title": "160 MHz",
                                 "type": "bool"
                             }
                         ],
@@ -7089,132 +9136,6 @@
                         "range": null,
                         "title": null,
                         "type": "int"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": "ESP_SYSTEM_SINGLE_CORE_MODE",
-                                "help": "This option allows to place .rtc_data and .rtc_rodata sections into\nRTC fast memory segment to free the slow memory region for ULP programs.\nThis option depends on the CONFIG_ESP_SYSTEM_SINGLE_CORE_MODE option because RTC fast memory\ncan be accessed only by PRO_CPU core.",
-                                "id": "ESP32_RTCDATA_IN_FAST_MEM",
-                                "name": "ESP32_RTCDATA_IN_FAST_MEM",
-                                "range": null,
-                                "title": "Place RTC_DATA_ATTR and RTC_RODATA_ATTR variables into RTC fast memory segment",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "ESP32_USE_FIXED_STATIC_RAM_SIZE",
-                                        "help": "RAM size dedicated for static variables (.data & .bss sections).\nPlease note that the actual length will be reduced by BTDM_RESERVE_DRAM if Bluetooth\ncontroller is enabled.",
-                                        "id": "ESP32_FIXED_STATIC_RAM_SIZE",
-                                        "name": "ESP32_FIXED_STATIC_RAM_SIZE",
-                                        "range": null,
-                                        "title": "Fixed Static RAM size",
-                                        "type": "hex"
-                                    }
-                                ],
-                                "depends_on": null,
-                                "help": "If this option is disabled, the DRAM part of the heap starts right after the .bss section,\nwithin the dram0_0 region. As a result, adding or removing some static variables\nwill change the available heap size.\n\nIf this option is enabled, the DRAM part of the heap starts right after the dram0_0 region,\nwhere its length is set with ESP32_FIXED_STATIC_RAM_SIZE",
-                                "id": "ESP32_USE_FIXED_STATIC_RAM_SIZE",
-                                "name": "ESP32_USE_FIXED_STATIC_RAM_SIZE",
-                                "range": null,
-                                "title": "Use fixed static RAM size",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "ESP_SYSTEM_SINGLE_CORE_MODE",
-                                "help": "If enabled, application can use IRAM as byte accessible region for storing data\n(Note: IRAM region cannot be used as task stack)\n\nThis is possible due to handling of exceptions `LoadStoreError (3)` and `LoadStoreAlignmentError (9)`\nEach unaligned read/write access will incur a penalty of maximum of 167 CPU cycles.",
-                                "id": "ESP32_IRAM_AS_8BIT_ACCESSIBLE_MEMORY",
-                                "name": "ESP32_IRAM_AS_8BIT_ACCESSIBLE_MEMORY",
-                                "range": null,
-                                "title": "Enable IRAM as 8 bit accessible memory",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "!ESP32_TRAX",
-                                        "help": "Reserve parts of SRAM1 for app IRAM which was previously reserved for bootloader DRAM.\nIf booting an app on an older bootloader from before this option was introduced, the app will fail\nto boot due to not recognizing the new IRAM memory area.\n\nIf this is the case please test carefully before pushing out any OTA updates.",
-                                        "id": "ESP_SYSTEM_ESP32_SRAM1_REGION_AS_IRAM",
-                                        "name": "ESP_SYSTEM_ESP32_SRAM1_REGION_AS_IRAM",
-                                        "range": null,
-                                        "title": "Reserve parts of SRAM1 for app IRAM (WARNING, read help before enabling)",
-                                        "type": "bool"
-                                    }
-                                ],
-                                "depends_on": null,
-                                "id": "component-config-esp-system-settings-memory-non-backward-compatible-options",
-                                "title": "Non-backward compatible options",
-                                "type": "menu"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-esp-system-settings-memory",
-                        "title": "Memory",
-                        "type": "menu"
-                    },
-                    {
-                        "children": [
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": null,
-                                "id": "ESP32_MEMMAP_TRACEMEM",
-                                "name": "ESP32_MEMMAP_TRACEMEM",
-                                "range": null,
-                                "title": null,
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": null,
-                                "id": "ESP32_MEMMAP_TRACEMEM_TWOBANKS",
-                                "name": "ESP32_MEMMAP_TRACEMEM_TWOBANKS",
-                                "range": null,
-                                "title": null,
-                                "type": "bool"
-                            },
-                            {
-                                "children": [
-                                    {
-                                        "children": [],
-                                        "depends_on": "ESP32_TRAX && !ESP_SYSTEM_SINGLE_CORE_MODE",
-                                        "help": "The ESP32 contains a feature which allows you to trace the execution path the processor\nhas taken through the program. This is stored in a chunk of 32K (16K for single-processor)\nof memory that can't be used for general purposes anymore. Disable this if you do not know\nwhat this is.\n\n# Memory to reverse for trace, used in linker script",
-                                        "id": "ESP32_TRAX_TWOBANKS",
-                                        "name": "ESP32_TRAX_TWOBANKS",
-                                        "range": null,
-                                        "title": "Reserve memory for tracing both pro as well as app cpu execution",
-                                        "type": "bool"
-                                    }
-                                ],
-                                "depends_on": null,
-                                "help": "The ESP32 contains a feature which allows you to trace the execution path the processor\nhas taken through the program. This is stored in a chunk of 32K (16K for single-processor)\nof memory that can't be used for general purposes anymore. Disable this if you do not know\nwhat this is.",
-                                "id": "ESP32_TRAX",
-                                "name": "ESP32_TRAX",
-                                "range": null,
-                                "title": "Use TRAX tracing feature",
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": null,
-                                "help": null,
-                                "id": "ESP32_TRACEMEM_RESERVE_DRAM",
-                                "name": "ESP32_TRACEMEM_RESERVE_DRAM",
-                                "range": null,
-                                "title": null,
-                                "type": "hex"
-                            }
-                        ],
-                        "depends_on": null,
-                        "id": "component-config-esp-system-settings-trace-memory",
-                        "title": "Trace memory",
-                        "type": "menu"
                     },
                     {
                         "children": [],
@@ -7961,26 +9882,6 @@
                         "name": "ESP_SYSTEM_CHECK_INT_LEVEL",
                         "title": "Interrupt level to use for Interrupt Watchdog and other system checks",
                         "type": "choice"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": null,
-                        "help": "If set, the first time the app boots it will disable the BASIC ROM Console\npermanently (by burning an eFuse).\n\nOtherwise, the BASIC ROM Console starts on reset if no valid bootloader is\nread from the flash.\n\n(Enabling secure boot also disables the BASIC ROM Console by default.)",
-                        "id": "ESP32_DISABLE_BASIC_ROM_CONSOLE",
-                        "name": "ESP32_DISABLE_BASIC_ROM_CONSOLE",
-                        "range": null,
-                        "title": "Permanently disable BASIC ROM Console",
-                        "type": "bool"
-                    },
-                    {
-                        "children": [],
-                        "depends_on": "!ESP_SYSTEM_SINGLE_CORE_MODE && SPIRAM",
-                        "help": null,
-                        "id": "ESP32_ECO3_CACHE_LOCK_FIX",
-                        "name": "ESP32_ECO3_CACHE_LOCK_FIX",
-                        "range": null,
-                        "title": null,
-                        "type": "bool"
                     },
                     {
                         "children": [],
@@ -10286,36 +12187,6 @@
                                 "help": null,
                                 "id": "SPI_FLASH_VENDOR_GD_SUPPORT_ENABLED",
                                 "name": "SPI_FLASH_VENDOR_GD_SUPPORT_ENABLED",
-                                "range": null,
-                                "title": null,
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "!APP_BUILD_TYPE_PURE_RAM_APP",
-                                "help": null,
-                                "id": "SPI_FLASH_VENDOR_ISSI_SUPPORT_ENABLED",
-                                "name": "SPI_FLASH_VENDOR_ISSI_SUPPORT_ENABLED",
-                                "range": null,
-                                "title": null,
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "!APP_BUILD_TYPE_PURE_RAM_APP",
-                                "help": null,
-                                "id": "SPI_FLASH_VENDOR_MXIC_SUPPORT_ENABLED",
-                                "name": "SPI_FLASH_VENDOR_MXIC_SUPPORT_ENABLED",
-                                "range": null,
-                                "title": null,
-                                "type": "bool"
-                            },
-                            {
-                                "children": [],
-                                "depends_on": "!APP_BUILD_TYPE_PURE_RAM_APP",
-                                "help": null,
-                                "id": "SPI_FLASH_VENDOR_WINBOND_SUPPORT_ENABLED",
-                                "name": "SPI_FLASH_VENDOR_WINBOND_SUPPORT_ENABLED",
                                 "range": null,
                                 "title": null,
                                 "type": "bool"

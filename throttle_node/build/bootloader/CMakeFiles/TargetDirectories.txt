@@ -17,9 +17,12 @@ C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloade
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/CMakeFiles/rebuild_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/CMakeFiles/edit_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/CMakeFiles/rebuild_cache.dir
-C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir
-C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/xtensa/CMakeFiles/edit_cache.dir
-C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/xtensa/CMakeFiles/rebuild_cache.dir
+C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/hal/CMakeFiles/__idf_hal.dir
+C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/hal/CMakeFiles/edit_cache.dir
+C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/hal/CMakeFiles/rebuild_cache.dir
+C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/riscv/CMakeFiles/__idf_riscv.dir
+C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/riscv/CMakeFiles/edit_cache.dir
+C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/riscv/CMakeFiles/rebuild_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/newlib/CMakeFiles/edit_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/newlib/CMakeFiles/rebuild_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/soc/CMakeFiles/__idf_soc.dir
@@ -28,9 +31,6 @@ C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloade
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/micro-ecc/CMakeFiles/edit_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/micro-ecc/CMakeFiles/rebuild_cache.dir
-C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/hal/CMakeFiles/__idf_hal.dir
-C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/hal/CMakeFiles/edit_cache.dir
-C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/hal/CMakeFiles/rebuild_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/spi_flash/CMakeFiles/edit_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/spi_flash/CMakeFiles/rebuild_cache.dir
@@ -60,8 +60,8 @@ C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloade
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/edit_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/rebuild_cache.dir
-C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_hw_support/port/esp32/CMakeFiles/edit_cache.dir
-C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_hw_support/port/esp32/CMakeFiles/rebuild_cache.dir
+C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_hw_support/port/esp32c6/CMakeFiles/edit_cache.dir
+C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_hw_support/port/esp32c6/CMakeFiles/rebuild_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/edit_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/rebuild_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir
@@ -80,6 +80,8 @@ C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloade
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/partition_table/CMakeFiles/rebuild_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/bootloader/CMakeFiles/edit_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/bootloader/CMakeFiles/rebuild_cache.dir
+C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_tee/CMakeFiles/edit_cache.dir
+C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/esp_tee/CMakeFiles/rebuild_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/freertos/CMakeFiles/edit_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/freertos/CMakeFiles/rebuild_cache.dir
 C:/Users/berni/Documents/SBT/ESP32_CAN_V2_SOFTWARE/throttle_node/build/bootloader/esp-idf/main/CMakeFiles/__idf_main.dir

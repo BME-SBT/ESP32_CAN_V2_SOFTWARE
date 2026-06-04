@@ -1,5 +1,6 @@
 #ifndef CAN_PROTOCOL_H
 #define CAN_PROTOCOL_H
+#include <stdint.h>
 
 #define Control_ID     0x100
 #define MotorTemps_ID  0x200
